@@ -50,6 +50,22 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               slug
             }
           }
+          next {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+            }
+          }
+          previous {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+            }
+          }
         }
       }
     }
@@ -59,7 +75,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-  events.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  events.data.allMarkdownRemark.edges.forEach(({ node, next, previous }) => {
     createPage({
       path: node.fields.slug,
       component: eventTemplate,
@@ -67,6 +83,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         // additional data can be passed via context
         ...node.frontmatter,
         ...node.fields,
+        next: next ? { slug: next.fields.slug, title: next.frontmatter.title } : null,
+        previous: previous ? { slug: previous.fields.slug, title: previous.frontmatter.title } : null,
       },
     })
   })

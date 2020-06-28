@@ -1,14 +1,15 @@
 import React from "react"
 import { Row, Col, Container } from "react-bootstrap"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header"
 
-const EventTemplate = ({ data }) => {
+const EventTemplate = ({ data, pageContext }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, fields, html } = markdownRemark
+  const { next, previous } = pageContext
 
   return (
     <Layout pageInfo={{ pageName: fields.slug }}>
@@ -49,6 +50,22 @@ const EventTemplate = ({ data }) => {
               className="text-left"
               dangerouslySetInnerHTML={{ __html: html }}
             />
+          </Col>
+        </Row>
+        <Row className="mt-5 mb-5">
+          <Col>
+            {next && (
+              <>
+                Next: <Link to={next.slug}>{next.title}</Link>
+              </>
+            )}
+          </Col>
+          <Col>
+            {previous && (
+              <>
+                Previous: <Link to={previous.slug}>{previous.title}</Link>
+              </>
+            )}
           </Col>
         </Row>
       </Container>
