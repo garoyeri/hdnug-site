@@ -11,17 +11,20 @@ const EventTemplate = ({ data }) => {
 
   return (
     <Layout pageInfo={{ pageName: fields.slug }}>
-      <SEO title={frontmatter.title || fields.slug} keywords={[`gatsby`, `react`, `bootstrap`]} />
+      <SEO
+        title={frontmatter.title || fields.slug}
+        keywords={[`gatsby`, `react`, `bootstrap`]}
+      />
       <Container className="text-left">
         <Row>
           <Col>
             <h2>{frontmatter.title || fields.slug}</h2>
             <p>
-              {frontmatter.date}{" "}{frontmatter.time}
+              {frontmatter.date} {frontmatter.time}
             </p>
             <div
-                className="text-left"
-                dangerouslySetInnerHTML={{ __html: html }} 
+              className="text-left"
+              dangerouslySetInnerHTML={{ __html: html }}
             />
           </Col>
         </Row>
