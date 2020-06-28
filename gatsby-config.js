@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Houston .NET Users Group`,
+    description: `To explore, examine, develop and advance applications and services built with the .Net Development platform. Effectively aiding the widespread learning and sharing of the Dot Net Development Platform in the Houston Technology Marketplace with our members, who are both individuals and corporations.`,
+    author: `@hdnug`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -51,8 +51,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Houston .NET Users Group`,
+        short_name: `hdnug`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

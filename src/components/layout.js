@@ -22,20 +22,16 @@ const Layout = ({ children, pageInfo }) => (
           <Navbar pageInfo={pageInfo} />
           <Row noGutters>
             <Col>
-              <Container className="mt-5">
-                <main>{children}</main>
-              </Container>
+              <main>{children}</main>
             </Col>
           </Row>
         </Container>
         <Container fluid className="px-0">
           <Row noGutters>
             <Col className="footer-col">
-              <footer>
+              <footer className="bg-dark">
                 <span>
-                  © {new Date().getFullYear()}, Built with
-                  {` `}
-                  <a href="https://www.gatsbyjs.org">Gatsby</a>
+                  © {new Date().getFullYear()} Houston .NET Users Group
                 </span>
               </footer>
             </Col>
