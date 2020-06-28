@@ -1,6 +1,7 @@
 ---
 title: "I'll Get Back to You: Task, Await, and Asynchronous Methods in C#"
 date: 2020-06-18
+time: "6:30 PM Central Time"
 hidden: false
 ---
 

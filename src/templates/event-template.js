@@ -12,10 +12,13 @@ const EventTemplate = ({ data }) => {
   return (
     <Layout pageInfo={{ pageName: fields.slug }}>
       <SEO title={frontmatter.title || fields.slug} keywords={[`gatsby`, `react`, `bootstrap`]} />
-      <Container className="text-center">
+      <Container className="text-left">
         <Row>
           <Col>
             <h2>{frontmatter.title || fields.slug}</h2>
+            <p>
+              {frontmatter.date}{" "}{frontmatter.time}
+            </p>
             <div
                 className="text-left"
                 dangerouslySetInnerHTML={{ __html: html }} 
@@ -33,6 +36,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
+        time
         title
       }
       fields {

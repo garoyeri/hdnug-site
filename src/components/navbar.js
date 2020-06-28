@@ -13,7 +13,7 @@ const CustomNavbar = ({ pageInfo }) => {
         childImageSharp {
           # Specify the image processing specifications right in the query.
           # Makes it trivial to update as your page's design changes.
-          fixed(height: 30) {
+          fixed(height: 50) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -33,7 +33,8 @@ const CustomNavbar = ({ pageInfo }) => {
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto" activeKey={pageInfo && pageInfo.pageName}>
+          <Nav className="mr-auto" />
+          <Nav activeKey={pageInfo && pageInfo.pageName}>
             <Link to="/past-events" className="link-no-style">
               <Nav.Link as="span" eventKey="past-events">
                 Past Events
