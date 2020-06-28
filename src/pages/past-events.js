@@ -4,12 +4,14 @@ import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Header from "../components/header"
 
 const PastEventsPage = ({ data }) => {
   console.log("Past Events Data", data)
   return (
     <Layout pageInfo={{ pageName: "past-events" }}>
       <SEO title="Past Events" keywords={[`gatsby`, `react`, `bootstrap`]} />
+      <Header title="Past User Group Events" />
       <Container>
         <Row>
           <Col>
