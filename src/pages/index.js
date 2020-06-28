@@ -41,6 +41,7 @@ const IndexPage = ({ data }) => (
                   target={node.fields.slug}
                   date={node.frontmatter.date}
                   time={node.frontmatter.time}
+                  presenters={node.frontmatter.presenters}
                 />
               )
             })}
@@ -74,6 +75,11 @@ export const pageQuery = graphql`
             date(formatString: "ddd, MMM D")
             title
             time
+            presenters {
+              name
+              twitter
+              web
+            }
           }
           excerpt
         }

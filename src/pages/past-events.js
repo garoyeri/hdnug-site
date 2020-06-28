@@ -1,70 +1,84 @@
 import React from "react"
-import { Row, Col, Container, ListGroup } from "react-bootstrap"
+import { Row, Col, Container, Table } from "react-bootstrap"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const PastEventsPage = () => (
-  <Layout pageInfo={{ pageName: "past-events" }}>
-    <SEO title="Past Events" keywords={[`gatsby`, `react`, `bootstrap`]} />
-    <Container className="text-center">
-      <Row>
-        <Col>
-          <p>
-            This is a Gatsby Starter that I frequently use to get jump started
-            on quick website builds. It includes the following packages:
-          </p>
-        </Col>
-      </Row>
-      <Row className="justify-content-center my-3">
-        <Col md="6">
-          <ListGroup>
-            <ListGroup.Item
-              action
-              href="https://getbootstrap.com"
-              target="_blank"
-            >
-              Bootstrap
-            </ListGroup.Item>
-            <ListGroup.Item
-              action
-              href="https://react-bootstrap.github.io/"
-              target="_blank"
-            >
-              react-bootstrap
-            </ListGroup.Item>
-            <ListGroup.Item
-              action
-              href="https://react-icons.netlify.com"
-              target="_blank"
-            >
-              react-icons
-            </ListGroup.Item>
-            <ListGroup.Item
-              action
-              href="https://www.gatsbyjs.org/packages/gatsby-plugin-sass/"
-              target="_blank"
-            >
-              gatsby-plugin-sass
-            </ListGroup.Item>
-          </ListGroup>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <p>
-            This starter also includes a navbar that sticks to the top of the
-            screen when the user scrolls past it, and a footer that stays at the
-            bottom of the screen.
-          </p>
-          <p>
-            For more documentation on these packages and how they work, please
-            refer to the pages linked in the list above.
-          </p>
-        </Col>
-      </Row>
-    </Container>
-  </Layout>
-)
+const PastEventsPage = ({ data }) => {
+  console.log("Past Events Data", data)
+  return (
+    <Layout pageInfo={{ pageName: "past-events" }}>
+      <SEO title="Past Events" keywords={[`gatsby`, `react`, `bootstrap`]} />
+      <Container>
+        <Row>
+          <Col>
+            <Table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Title</th>
+                  <th>Presenters</th>
+                  <th>Summary</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.events.edges.map(({ node }) => {
+                  console.log("Node Found", node)
+                  return (
+                    <tr>
+                      <td>
+                        <nobr>{node.frontmatter.date}</nobr>
+                      </td>
+                      <td>
+                        {node.frontmatter.presenters.map(item => (
+                          <p>{item.name}</p>
+                        ))}
+                      </td>
+                      <td>
+                        <Link to={node.fields.slug}>
+                          {node.frontmatter.title}
+                        </Link>
+                      </td>
+                      <td>{node.excerpt}</td>
+                    </tr>
+                  )
+                })}
+              </tbody>
+            </Table>
+          </Col>
+        </Row>
+      </Container>
+    </Layout>
+  )
+}
+
+export const pageQuery = graphql`
+  query {
+    events: allMarkdownRemark(
+      filter: { fields: { collection: { eq: "events" } } }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "ddd, MMM D")
+            title
+            time
+            presenters {
+              name
+              twitter
+              web
+            }
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`
 
 export default PastEventsPage
