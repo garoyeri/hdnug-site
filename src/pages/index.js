@@ -36,6 +36,7 @@ const IndexPage = ({ data }) => (
             {data.events.edges.map(({ node }) => {
               return (
                 <EventCard
+                  key={node.id}
                   title={node.frontmatter.title}
                   text={node.excerpt}
                   target={node.fields.slug}
@@ -68,6 +69,7 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          id
           fields {
             slug
           }

@@ -6,10 +6,10 @@ import { Link } from "gatsby"
 const EventCard = ({ title, presenters, text, target, date, time }) => {
   const presenterList = presenters.map(s => s.name).join(", ")
   return (
-    <Card className="h-200">
+    <Card>
       <Card.Body>
         <Card.Title>{title}</Card.Title>
-        <Card.Text>
+        <div>
           <p>
             <i>Presented by: {presenterList}</i>
           </p>
@@ -22,7 +22,7 @@ const EventCard = ({ title, presenters, text, target, date, time }) => {
               Learn More
             </Link>
           </p>
-        </Card.Text>
+        </div>
       </Card.Body>
     </Card>
   )
