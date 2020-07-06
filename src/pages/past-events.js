@@ -33,29 +33,28 @@ const PastEventsPage = ({ data }) => {
                 <tr>
                   <th>Date</th>
                   <th>Title</th>
-                  <th>Presenters</th>
                   <th>Summary</th>
                 </tr>
               </thead>
               <tbody>
                 {data.events.edges.map(({ node }) => {
-                  console.log("Node Found", node)
+                  // console.log("Node Found", node)
                   return (
                     <tr>
                       <td>
                         <nobr>{node.frontmatter.date}</nobr>
                       </td>
                       <td>
-                        {node.frontmatter.presenters.map(item => (
-                          <p>{item.name}</p>
-                        ))}
-                      </td>
-                      <td>
                         <Link to={node.fields.slug}>
                           {node.frontmatter.title}
                         </Link>
+                        <dl>
+                        {node.frontmatter.presenters.map(item => (
+                          <dd>{item.name}</dd>
+                        ))}
+                        </dl>
                       </td>
-                      <td>{node.excerpt}</td>
+                      <td>{node.frontmatter.excerpt || node.excerpt}</td>
                     </tr>
                   )
                 })}
@@ -85,6 +84,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "ddd, MMM D")
             title
+            excerpt
             time
             presenters {
               name
