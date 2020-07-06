@@ -1,17 +1,30 @@
 import React from "react"
-import { Row, Col, Container, Table } from "react-bootstrap"
+import { Row, Col, Container, Jumbotron, Table } from "react-bootstrap"
 import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/header"
 
 const PastEventsPage = ({ data }) => {
   console.log("Past Events Data", data)
   return (
     <Layout pageInfo={{ pageName: "past-events" }}>
       <SEO title="Past Events" keywords={[`gatsby`, `react`, `bootstrap`]} />
-      <Header title="Past User Group Events" />
+      <Jumbotron
+        className="text-white"
+        fluid
+        style={{
+          background: `linear-gradient(to bottom, rgba(35,35,35,0.8) 0%,rgba(35,35,35,0.8) 100%), url(${data.headingBackground.childImageSharp.fluid.src})`,
+        }}
+      >
+        <Container>
+          <Row>
+            <Col>
+              <h1>Past User Group Events</h1>
+            </Col>
+          </Row>
+        </Container>
+      </Jumbotron>
       <Container>
         <Row>
           <Col>
@@ -58,7 +71,10 @@ const PastEventsPage = ({ data }) => {
 export const pageQuery = graphql`
   query {
     events: allMarkdownRemark(
-      filter: { fields: { collection: { eq: "events" } } }
+      filter: {
+        fields: { collection: { eq: "events" } }
+        frontmatter: { hidden: { ne: true } }
+      }
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       edges {
@@ -77,6 +93,15 @@ export const pageQuery = graphql`
             }
           }
           excerpt
+        }
+      }
+    }
+    headingBackground: file(
+      relativePath: { eq: "programming-1873854_1920.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
