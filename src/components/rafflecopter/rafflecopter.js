@@ -2,9 +2,9 @@ import { useState, useEffect } from "react"
 
 /**
  * @typedef Range
- * @property {number} index
- * @property {number} start
- * @property {number} end
+ * @property {number} id the unique identifier for this range
+ * @property {number} start the starting value for this range (inclusive)
+ * @property {number} end the ending value for this range (inclusive)
  */
 const Range = {
   id: 1,
