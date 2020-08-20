@@ -7,7 +7,7 @@ excerpt: |
 presenters:
   - name: Jeremy Clark
     twitter: jeremybytes
-    web: http://www.jeremybytes.com/
+    website: http://www.jeremybytes.com/
 ---
 
 ## Abstract

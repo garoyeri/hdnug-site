@@ -6,6 +6,10 @@
 
 const { createFilePath } = require("gatsby-source-filesystem")
 
+const peopleSource = "people",
+  sponsorsSource = "sponsors",
+  eventsSource = "events"
+
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
 
@@ -33,10 +37,12 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String!
       presenters: [UgPerson!]! @link
       date: Date! @dateformat
-      time: String!
+      time: String
       image: File @fileByRelativePath
       excerpt: String!
+      content: String
       slug: String!
+      website: String
       hidden: Boolean
     }
 
@@ -57,9 +63,15 @@ exports.createSchemaCustomization = ({ actions }) => {
   createTypes(typeDefs)
 }
 
-exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDigest, reporter }) => {
+exports.onCreateNode = ({
+  node,
+  actions,
+  getNode,
+  createNodeId,
+  createContentDigest,
+  reporter,
+}) => {
   const { createNode, createNodeField } = actions
-  const people = "people", sponsors = "sponsors", events = "events"
 
   if (node.internal.type === `MarkdownRemark`) {
     // Get the parent node
@@ -71,7 +83,7 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
     const slugUrl = `/${parent.sourceInstanceName}${slug}`
 
     switch (parent.sourceInstanceName) {
-      case people:
+      case peopleSource:
         const person = generatePerson(node)
         createNode({
           ...person,
@@ -85,7 +97,7 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
           children: [node.id],
         })
         break
-      case sponsors:
+      case sponsorsSource:
         const sponsor = generateSponsor(node)
         createNode({
           ...sponsor,
@@ -99,7 +111,7 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
           children: [node.id],
         })
         break
-      case events:
+      case eventsSource:
         const event = generateEvent(node)
         createNode({
           ...event,
@@ -118,11 +130,152 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
 }
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
+  const { createPage, createNode, createNodeId } = actions
+
+  // layer XML, Meetup, and Markdown to be Events
+  const xmlEventsSource = await graphql(`
+    {
+      allHdnugXml {
+        edges {
+          node {
+            id
+            xmlChildren {
+              name
+              content
+            }
+          }
+        }
+      }
+    }
+  `)
+  if (xmlEventsSource.errors) {
+    reporter.panicOnBuild(
+      `Error while running GraphQL query.`,
+      xmlEventsSource.errors
+    )
+    return
+  }
+  const xmlEvents = xmlEventsSource.data.allHdnugXml.edges.map(n => {
+    const rawEvent = {
+      id: n.node.id,
+      ...n.node.xmlChildren.map(e => {
+        return { [e.name]: e.content }
+      }),
+    }
+
+    return {
+      xml_id: rawEvent.id,
+      date: rawEvent.MeetingDate,
+      title: rawEvent.Title,
+      excerpt: rawEvent.SessionAbstract,
+      speaker: {
+        name: `${rawEvent.SpeakerFirstName} ${rawEvent.SpeakerLastName}`,
+        bio: rawEvent.AboutSpeaker,
+      },
+      sponsor: {
+        name: rawEvent.SponsorName,
+        website: rawEvent.SponsorUrl,
+        summary: rawEvent.SponsorMessage,
+      },
+    }
+  })
+
+  const meetupEventsSource = await graphql(`
+    {
+      allMeetupEvent {
+        edges {
+          node {
+            description
+            featured_photo {
+              photo_link
+              highres_link
+            }
+            local_date
+            local_time
+            name
+            link
+          }
+        }
+      }
+    }
+  `)
+  if (meetupEventsSource.errors) {
+    reporter.panicOnBuild(
+      `Error while running GraphQL query.`,
+      meetupEventsSource.errors
+    )
+    return
+  }
+  const meetupEvents = meetupEventsSource.data.allMeetupEvent.edges.map(n => {
+    return {
+      meetup_id: n.node.id,
+      date: n.node.local_date,
+      time: n.node.local_time,
+      title: n.node.name,
+      website: n.node.link,
+      image: n.node.featured_photo && n.node.featured_photo.highres_link,
+    }
+  })
+
+  const markdownFilesSource = await graphql(`
+    {
+      allMarkdownRemark(filter: { frontmatter: { hidden: { ne: true } } }) {
+        edges {
+          node {
+            parent {
+              id
+              ... on File {
+                sourceInstanceName
+              }
+            }
+            id
+            excerpt
+            frontmatter {
+              date
+              email
+              excerpt
+              presenters {
+                name
+                email
+                twitter
+                website
+                github
+                linkedin
+              }
+              title
+              hidden
+            }
+            html
+          }
+        }
+      }
+    }
+  `)
+  if (markdownFilesSource.errors) {
+    reporter.panicOnBuild(
+      `Error while running GraphQL query.`,
+      markdownFilesSource.errors
+    )
+    return
+  }
+  const markdownEvents = markdownFilesSource.data.allMarkdownRemark.edges
+    .filter(n => n.node.parent.sourceInstanceName === eventsSource)
+    .map(n => {
+      return {
+        markdown_id: n.node.id,
+        date: n.node.frontmatter.date,
+        time: n.node.frontmatter.time,
+        title: n.node.frontmatter.title,
+        excerpt: n.node.frontmatter.excerpt || n.node.excerpt,
+        content: n.node.html,
+        presenters: n.node.presenters,
+      }
+    })
+
   const eventTemplate = require.resolve(`./src/templates/event-template.js`)
   const events = await graphql(`
     {
-      allUgEvent(sort: {fields: date, order: DESC}) {
+      allUgEvent(sort: { fields: date, order: DESC }) {
         edges {
           node {
             id
@@ -154,9 +307,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       context: {
         // additional data can be passed via context
         slug: node.slug,
-        next: next
-          ? { slug: next.slug, title: next.title }
-          : null,
+        next: next ? { slug: next.slug, title: next.title } : null,
         previous: previous
           ? { slug: previous.slug, title: previous.title }
           : null,

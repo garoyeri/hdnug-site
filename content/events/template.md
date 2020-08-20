@@ -8,7 +8,16 @@ hidden: true
 presenters:
   - name: Presenter Name
     twitter: presenterhandle
-    web: https://www.presenterwebsite.com
+    website: https://www.presenterwebsite.com
+    email: presenter@email.com
+    github: presenter
+    linkedin: presenter
+  - name: Presenter 2
+    twitter: presenterhandle
+    website: https://www.presenterwebsite.com
+    email: presenter@email.com
+    github: presenter
+    linkedin: presenter    
 ---
 
 ## Abstract
