@@ -46,12 +46,12 @@ const IndexPage = ({ data }) => (
                 return (
                   <EventCard
                     key={node.id}
-                    title={node.frontmatter.title}
-                    text={node.frontmatter.excerpt || node.excerpt}
-                    target={node.fields.slug}
-                    date={node.frontmatter.date}
-                    time={node.frontmatter.time}
-                    presenters={node.frontmatter.presenters}
+                    title={node.title}
+                    text={node.excerpt}
+                    target={node.slug}
+                    date={node.date}
+                    time={node.time}
+                    presenters={node.presenters}
                   />
                 )
               })}
@@ -79,32 +79,26 @@ export const pageQuery = graphql`
         }
       }
     }
-    events: allMarkdownRemark(
+    events: allUgEvent(
       filter: {
-        fields: { collection: { eq: "events" } }
-        frontmatter: { hidden: { ne: true } }
+        hidden: { ne: true }
       }
-      sort: { fields: frontmatter___date, order: DESC }
+      sort: { fields: date, order: DESC }
       limit: 6
     ) {
       edges {
         node {
           id
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "ddd, MMM D")
-            title
-            excerpt
-            time
-            presenters {
-              name
-              twitter
-              web
-            }
-          }
+          slug
+          date(formatString: "ddd, MMM D")
+          title
           excerpt
+          time
+          presenters {
+            name
+            twitter
+            web
+          }
         }
       }
     }

@@ -22,6 +22,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       linkedin: String
       image: File @fileByRelativePath
       bio: String
+      slug: String!
       hidden: Boolean
     }
   
@@ -35,6 +36,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       image: File @fileByRelativePath
       abstract: String!
       content: String!
+      slug: String!
       hidden: Boolean
     }
 
@@ -47,6 +49,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       email: String
       image: File @fileByRelativePath
       summary: String
+      slug: String!
       hidden: Boolean
     }
   `
@@ -64,12 +67,16 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
 
     reporter.info(`encountered: ${parent.sourceInstanceName}`)
 
+    const slug = createFilePath({ node, getNode, basePath: `content` })
+    const slugUrl = `/${parent.sourceInstanceName}${slug}`
+
     switch (parent.sourceInstanceName) {
       case people:
         const person = generatePerson(node)
         createNode({
           ...person,
           id: createNodeId(`person-${person.name}${person.email}`),
+          slug: slugUrl,
           // parent: node.id,
           internal: {
             type: `UgPerson`,
@@ -83,6 +90,7 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
         createNode({
           ...sponsor,
           id: createNodeId(`sponsor-${sponsor.name}${sponsor.website}`),
+          slug: slugUrl,
           // parent: node.id,
           internal: {
             type: `UgSponsor`,
@@ -96,6 +104,7 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
         createNode({
           ...event,
           id: createNodeId(`event-${event.title}${event.date}`),
+          slug: slugUrl,
           // parent: node.id,
           internal: {
             type: `UgEvent`,
@@ -105,23 +114,6 @@ exports.onCreateNode = ({ node, actions, getNode, createNodeId, createContentDig
         })
         break
     }
-
-    // Create a field on this node for the "collection" of the parent
-    // NOTE: This is necessary so we can filter `allMarkdownRemark` by
-    // `collection` otherwise there is no way to filter for only markdown
-    // documents of type `post`.
-    createNodeField({
-      node,
-      name: `collection`,
-      value: parent.sourceInstanceName,
-    })
-
-    const slug = createFilePath({ node, getNode, basePath: `content` })
-    createNodeField({
-      node,
-      name: `slug`,
-      value: `/${parent.sourceInstanceName}${slug}`,
-    })
   }
 }
 
@@ -130,57 +122,43 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const eventTemplate = require.resolve(`./src/templates/event-template.js`)
   const events = await graphql(`
     {
-      allMarkdownRemark(filter: { fields: { collection: { eq: "events" } } }) {
+      allUgEvent(sort: {fields: date, order: DESC}) {
         edges {
           node {
-            frontmatter {
-              title
-              date
-              hidden
-            }
-            fields {
-              collection
-              slug
-            }
+            id
+            title
+            slug
           }
           next {
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-            }
+            title
+            slug
           }
           previous {
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-            }
+            title
+            slug
           }
         }
       }
     }
   `)
+
   // Handle errors
   if (events.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-  events.data.allMarkdownRemark.edges.forEach(({ node, next, previous }) => {
+  events.data.allUgEvent.edges.forEach(({ node, next, previous }) => {
     createPage({
-      path: node.fields.slug,
+      path: node.slug,
       component: eventTemplate,
       context: {
         // additional data can be passed via context
-        ...node.frontmatter,
-        ...node.fields,
+        slug: node.slug,
         next: next
-          ? { slug: next.fields.slug, title: next.frontmatter.title }
+          ? { slug: next.slug, title: next.title }
           : null,
         previous: previous
-          ? { slug: previous.fields.slug, title: previous.frontmatter.title }
+          ? { slug: previous.slug, title: previous.title }
           : null,
       },
     })

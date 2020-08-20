@@ -7,22 +7,21 @@ import SEO from "../components/seo"
 import Header from "../components/header"
 
 const EventTemplate = ({ data, pageContext }) => {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
-  const { frontmatter, fields, html } = markdownRemark
+  const { ugEvent } = data
   const { next, previous } = pageContext
 
   return (
-    <Layout pageInfo={{ pageName: fields.slug }}>
+    <Layout pageInfo={{ pageName: ugEvent.slug }}>
       <SEO
-        title={frontmatter.title || fields.slug}
+        title={ugEvent.title || ugEvent.slug}
         keywords={[`gatsby`, `react`, `bootstrap`]}
       />
-      <Header title={frontmatter.title || fields.slug}>
+      <Header title={ugEvent.title || ugEvent.slug}>
         <p>
-          {frontmatter.date} {frontmatter.time}
+          {ugEvent.date} {ugEvent.time}
         </p>
         <ul>
-          {frontmatter.presenters.map(p => (
+          {ugEvent.presenters.map(p => (
             <li>
               {p.name}{" "}
               {p.twitter && (
@@ -48,7 +47,7 @@ const EventTemplate = ({ data, pageContext }) => {
           <Col>
             <div
               className="text-left"
-              dangerouslySetInnerHTML={{ __html: html }}
+              dangerouslySetInnerHTML={{ __html: ugEvent.childMarkdownRemark.html }}
             />
           </Col>
         </Row>
@@ -75,20 +74,18 @@ const EventTemplate = ({ data, pageContext }) => {
 
 export const pageQuery = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        time
-        title
-        presenters {
-          name
-          twitter
-          web
-        }
+    ugEvent(slug: { eq: $slug }) {
+      slug
+      date(formatString: "MMMM DD, YYYY")
+      time
+      title
+      presenters {
+        name
+        twitter
+        web
       }
-      fields {
-        slug
+      childMarkdownRemark {
+        html
       }
     }
   }

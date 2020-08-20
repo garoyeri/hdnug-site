@@ -42,19 +42,19 @@ const PastEventsPage = ({ data }) => {
                   return (
                     <tr>
                       <td>
-                        <nobr>{node.frontmatter.date}</nobr>
+                        <nobr>{node.date}</nobr>
                       </td>
                       <td>
-                        <Link to={node.fields.slug}>
-                          {node.frontmatter.title}
+                        <Link to={node.slug}>
+                          {node.title}
                         </Link>
                         <dl>
-                        {node.frontmatter.presenters.map(item => (
+                        {node.presenters.map(item => (
                           <dd>{item.name}</dd>
                         ))}
                         </dl>
                       </td>
-                      <td>{node.frontmatter.excerpt || node.excerpt}</td>
+                      <td>{node.excerpt}</td>
                     </tr>
                   )
                 })}
@@ -69,30 +69,24 @@ const PastEventsPage = ({ data }) => {
 
 export const pageQuery = graphql`
   query {
-    events: allMarkdownRemark(
+    events: allUgEvent(
       filter: {
-        fields: { collection: { eq: "events" } }
-        frontmatter: { hidden: { ne: true } }
+        hidden: { ne: true }
       }
-      sort: { fields: frontmatter___date, order: DESC }
+      sort: { fields: date, order: DESC }
     ) {
       edges {
         node {
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "ddd, MMM D")
-            title
-            excerpt
-            time
-            presenters {
-              name
-              twitter
-              web
-            }
-          }
+          slug
+          date(formatString: "ddd, MMM D")
+          title
           excerpt
+          time
+          presenters {
+            name
+            twitter
+            web
+          }
         }
       }
     }
