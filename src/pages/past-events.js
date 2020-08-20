@@ -80,12 +80,12 @@ export const pageQuery = graphql`
           slug
           date(formatString: "ddd, MMM D")
           title
-          excerpt
           time
+          excerpt
           presenters {
             name
             twitter
-            web
+            website
           }
         }
       }

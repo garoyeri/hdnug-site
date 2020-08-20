@@ -82,10 +82,7 @@ export const pageQuery = graphql`
       presenters {
         name
         twitter
-        web
-      }
-      childMarkdownRemark {
-        html
+        website
       }
     }
   }

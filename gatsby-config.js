@@ -15,6 +15,23 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-meetup`,
+      options: {
+        apiKey: process.env.MEETUP_API_KEY,
+        groupUrlName: "Houston-dotNET-User-Group",
+        status: "upcoming,past",
+        fields: "featured_photo",
+        desc: "true"
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `hdnug_files`,
+        path: `${__dirname}/content/hdnug_files`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `events`,
@@ -37,6 +54,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-xml`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {

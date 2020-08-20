@@ -1,0 +1,1259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<LegacyFiles>
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Devlin Liles is a Vice President of Consulting at Improving Enterprises and a passionate technologist. Devlin prides himself on staying a generalist, but his passion in development is data and its interactions. These passions gained him the recognition of Microsoft as an MVP of Data Platform Development awardee. &lt;br/&gt;Since 2007 he has been presenting and teaching classes on software development practices and tools to audiences around the nation. He is a regular national presenter at user groups, conferences, and community events. He founded an internal Corporate Software Craftsmanship conference in Northwest Arkansas as well as led the Tyson User group for a year and a half. He has been involved in many conferences and events(Dallas TechFest, Houston TechFest, Houston CodeCamp, Houston GiveCamp, AgileDotNet) as a coordinator; planner; or just a helping hand.&lt;br/&gt;Recently Devlin became published along with his good friend Tim Rayburn as authors of a book about Entity Framework and the expert approach to it.&lt;br/&gt;He is an avid soccer player and hobbyist gamer.</AboutSpeaker>
+    <MeetingDate>2015-02-12T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston Meeting Facility &#xD;
+ 2000 W Sam Houston Pkwy S, Suite 350 &#xD;
+ Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Wondering what is coming in Entity Framework 7? In this talk we are going to review the roadmap as well as what is going to make the cut and when. We will also be building out a universal app that leverages these new features.</SessionAbstract>
+    <SpeakerFirstName>Devlin</SpeakerFirstName>
+    <SpeakerLastName>Liles</SpeakerLastName>
+    <SponsorMessage>Finding the right candidate is time consuming. So is finding the right job. And let's be honest, don't you have enough on your plate already? That's where Clearpoint comes in.&lt;br/&gt;Clearpoint is the staffing partner of choice for many of Houston's top employers. Companies trust us to fill open technology and creative positions with talented professionals because of our successful track record, years of experience, and extensive network of amazing talent. &lt;br/&gt;Job seekers love Clearpoint's connections in the job market and high standards for representing skilled professionals. When you consider our paid benefits and profit-sharing for contractors, Clearpoint stands head and shoulders above the rest. That's because we do business the right way, and we treat you right.</SponsorMessage>
+    <SponsorName>Clearpoint</SponsorName>
+    <SponsorUrl>Brain Power for Hire</SponsorUrl>
+    <Title>What's new in Entity Framework 7?</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Peter Seale is a software developer who enjoys teaching, hosting open &#xD;
+community discussions about how to build software, and rabble-rousing. He &#xD;
+works for Improving Enterprises ( http://http://www.improving.com/ ), and&#xD;
+may be found on twitter at @pseale ( https://twitter.com/pseale ) where he&#xD;
+is a monster follow.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2015-04-09T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston Meeting Facility &#xD;
+2000 W Sam Houston Pkwy S, Suite 350&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>~ involving abstractions, extensibility, and the steady descent into madness ~&#xD;
+&#xD;
+Hello! In this talk, I hope to get us all thinking about architecture.&#xD;
+&#xD;
+To do so, we’ll take a look at an app that already works. &#xD;
+&#xD;
+(Full source available at https://github.com/pseale/presentation-architecture-madness ) &#xD;
+We’ll then look at the same app with an extra layer of abstraction and &#xD;
+discuss what we like and don't like. We'll continue applying abstractions &#xD;
+until everyone agrees we’ve gone too far -- and after we've gone too &#xD;
+far, we'll go further. &#xD;
+&#xD;
+Acts in this tragedy:&#xD;
+&#xD;
+* methods &amp; objects&#xD;
+* layers, DDD &amp; CQRS&#xD;
+* configuration &amp; extensibility&#xD;
+* DSLs and/or metaprogramming&#xD;
+&#xD;
+Ideally, everyone who attends this talk will come away with a better &#xD;
+understanding of how to harness the power of simple architecture, &#xD;
+while jettisoning the garbage.&#xD;
+&#xD;
+At worst, we’ll have a rowdy good time arguing about code.</SessionAbstract>
+    <SpeakerFirstName>Peter</SpeakerFirstName>
+    <SpeakerLastName>Seale</SpeakerLastName>
+    <SponsorMessage>We are a Tier 1 provider for .Net technology in Houston, TX with an emphases on providing our consultants on a career path. At iSphere, we pride ourselves on providing our consultants an experience that not only satisfies their professional needs, but also their personal needs.</SponsorMessage>
+    <SponsorName>iSphere</SponsorName>
+    <SponsorUrl>a partner in your IT success</SponsorUrl>
+    <Title>Architecture in C#: A Five Act Tragedy </Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Stephen Fulcher is a serial entrepreneur focused on delivering technology products and services that transform businesses. After working with Microsoft as a Principal Engineer and Regional Director, he founded Crocodile Software to bring game-changing technology and services to businesses large and small. Along the way, he has been a speaker at numerous technology conferences, developer meetings and product launches. He currently works with Crocodile team members and customers to drive innovation that delivers strategic business value.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2015-05-14T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston Meeting Facility &#xD;
+2000 W Sam Houston Pkwy S, Suite 350 &#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>In this talk we will take a fun roller-coaster ride through the Web API pipeline to see exactly what happens over the lifetime of a request and response. We will start at the IIS entry point and explore the ASP.NET runtime events, the key modules, synchronous and asynchronous threading behavior, the request handler, the request and response streams, extensibility points and a few best practices along the way. </SessionAbstract>
+    <SpeakerFirstName>Stephen</SpeakerFirstName>
+    <SpeakerLastName>Fulcher</SpeakerLastName>
+    <SponsorMessage>MATRIX is a leading national Information Technology Solutions provider, producing results for more than 2,300 clients in the last decade. Last year, more than 2,000 MATRIX consultants provided Professional IT Services, Professional IT Staffing, and Telecom Services, helping clients achieve outstanding technology and business success. Ask us about our open jobs in Houston! Get more info at www.matrixres.com.</SponsorMessage>
+    <SponsorName>MATRIX</SponsorName>
+    <SponsorUrl>We're How You Get There</SponsorUrl>
+    <Title>The Life Of A Web API Request</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Garabed “Garo” Yeriazarian is software engineering manager for Intelligent Production Systems at Baker Hughes in Houston, TX. In his 12 years with the company, he has been slinging code, setting up development environments, configuring systems, introducing new technologies, learning a whole bunch of random stuff, wrestling with IT departments, and trying to make it easier for customers to get dinosaur juice out of the ground.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2015-08-13T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston Meeting Facility &#xD;
+2000 W Sam Houston Pkwy S, Suite 350 &#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>In our .NET software development environment, we have quite a few systems and tools in place to help us to keep track of all the code slinging about, the work items and the sporadic (or frequent) issues. To maintain sanity, we need a few key systems:&#xD;
+1) Dependency Management&#xD;
+2) Source Control&#xD;
+3) Issue Tracking&#xD;
+4) Build&#xD;
+5) Testing&#xD;
+In these systems, we have an established interconnection and a process for effectively using these three things together to improve productivity for product owners, developers, QA, and users. In this talk, I will demonstrate how we use these systems in our work environment and walk through the lifecycle of a work item. The specific technologies I will focus on are: NuGet, Subversion, JIRA, TeamCity, NUnit. You too can achieve developer bliss from having a well-oiled DevOps ecosystem that will make you all look good and feel good.</SessionAbstract>
+    <SpeakerFirstName>Garabed</SpeakerFirstName>
+    <SpeakerLastName>Yeriazarian</SpeakerLastName>
+    <SponsorMessage>Aspose is a leading vendor of .NET and Java development components. Aspose's core focus is to offer the most complete and powerful set of file management products on the market. Aspose products support some of the most popular file formats in business, including: Word documents, Excel spreadsheets, PowerPoint presentations, and PDF documents.</SponsorMessage>
+    <SponsorName>Aspose</SponsorName>
+    <SponsorUrl>Aspose - Your File Format APIs</SponsorUrl>
+    <Title>Tools of the Trade: Closing the Loop in .NET Development </Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Jane Prusakova and Josh Rizzo are software consultants, working at Improving Enterprises, a boutique software consulting firm.   We work on large-scale projects spanning many teams and generations of developers, work with legacy and greenfield code, and appreciate a good code base. </AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2015-09-10T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston Meeting Facility &#xD;
+2000 W Sam Houston Pkwy S, Suite 350 &#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Many programmers are dedicated, or even obsessed, with writing “good” code. Often we follow certain patterns and practices because we believe they are the best solution for the problem, or because the “experts” tell us to. In this session, we will discuss what good code really is and what benefits it brings.&#xD;
+&#xD;
+ The talk covers concepts related to code readability, and walks through a number of refactorings on an example web application in C#.Net. </SessionAbstract>
+    <SpeakerFirstName>Jane Prusakova</SpeakerFirstName>
+    <SpeakerLastName>Josh Rizzo</SpeakerLastName>
+    <SponsorMessage/>
+    <SponsorName i:nil="true"/>
+    <SponsorUrl i:nil="true"/>
+    <Title>Good Code is not what you think it is...</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Tony Champion is a software architect with over 19 years of experience developing with Microsoft technologies. As the president of Champion DS and its lead software architect, he remains active in the latest trends and technologies, creating custom solutions on Microsoft platforms. Tony is an active participant in the community as a Microsoft MVP, international speaker, published author, and blogger. He focuses on a wide range of technologies from web solutions to native apps on Windows Phone and Windows to Xbox One development. He can be found on his blog at tonychampion.net and on twitter at @tonychampion.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2015-10-08T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston Meeting Facility &#xD;
+ 2000 W Sam Houston Pkwy S, Suite 350 &#xD;
+ Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>This session explores the role of Windows 10 and Windows apps in the enterprise. It will examine how to effectively structure apps to maximize code reuse, look at the construction and role of mobile companion apps, and present best practices through real world examples.&#xD;
+- Understand the role of Windows 10 apps in the enterprise&#xD;
+- Explore ways and strategies to make Windows apps successful in enterprise&#xD;
+- Discover how to build real world apps and mobile companion enterprise apps</SessionAbstract>
+    <SpeakerFirstName>Tony</SpeakerFirstName>
+    <SpeakerLastName>Champion</SpeakerLastName>
+    <SponsorMessage>Whitaker IT provides quality contract, contract-to-hire, and direct-hire staffing solutions for a wide variety of enterprises and organizations with a specialized focus in applications- including ERP (Oracle, SAP and PeopleSoft), business and custom applications((web and desktop) including Microsoft, Java and Open Source Technologies, and Healthcare IT. Our new website streamlines our offerings and job search capabilities, making it easier to identify your next team member or career opportunity more efficiently. One firm, one call, all your needs met with industry leading talent!</SponsorMessage>
+    <SponsorName>WhitakerIT</SponsorName>
+    <SponsorUrl>Contract Staffing &amp; Search</SponsorUrl>
+    <Title>Build Windows 10 apps for the Enterprise</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Curtis grew up in the Ozarks with a cave in his back yard and a Timex Sinclair 1000 on the floor in front of the family TV. Then, he grew up. Now, he designs, architects, and writes Web apps for himself, his friends, and his clients. He also teaches and coaches Feature-Driven Design principles, draws comics and cartoons, makes educational videos, and hangs out on #elixir-lang.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2015-11-12T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston Meeting Facility &#xD;
+750 Town and Country Blvd&#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>&lt;h2&gt;NOTE: New Location!!&lt;/h2&gt;&#xD;
+&lt;b&gt;&lt;a href='https://www.bing.com/mapspreview?&amp;ty=17&amp;q=750%20Town%20and%20Country%20Blvd%2c%20Houston%2c%20TX%2077024&amp;mb=29.781001~-95.566335~29.773275~-95.554468&amp;ppois=29.777138158679_-95.5604016780853_750%20Town%20and%20Country%20Blvd%2c%20Houston%2c%20TX%2077024_~&amp;cp=29.777138~-95.560402&amp;v=2&amp;sV=1&amp;qpvt=750+Town+and+Country+Blvd%2c+St.+1000%2c+Houston%2c+Tx++77024&amp;FORM=MIRE'&gt;750 Town and Country Blvd&lt;/a&gt;&lt;br/&gt;&#xD;
+Houston, TX 77024&lt;/b&gt;&#xD;
+This forward-looking talk will cover how to use View Components and Tag Helpers in ASP.NET MVC 6 with Polymer-based Web Components. Leveraging the new features in ASP.NET MVC 6 and the recently-ratified Web Components standards can increase the speed with which we can build great, responsive, browser-based applications. Join me in a thirty-minute overview and Q&amp;A session on these topics and, then, a ninety-minute session building a non-trivial user interface with the help of these three excellent additions to the knapsack of Web development.</SessionAbstract>
+    <SpeakerFirstName>Curtis</SpeakerFirstName>
+    <SpeakerLastName>Schlak</SpeakerLastName>
+    <SponsorMessage>As a supporter of continuing education through technology P97 Networks is excited to be this month’s sponsor of the Houston .NET User Group meeting. P97  provides secure cloud based mobile commerce and digital marketing solutions for the convenience retail and fuels marketing industry under the brand name PetroZone®.  P97’s mCommerce solutions enhance the ability of convenience store operators, marketers, and oil companies to attract and retain customers by providing technology that securely connects millions of individual mobile phones and connected cars with identity and geo-location based software technology to create truly unique connected-consumer experiences. With recent partnership announcements with MasterCard, SAP and Chase, we are currently looking to add to our growing team. Open senior and junior C# software developer positions can be found on our website at www.p97.com/careers. For more information follow us on Twitter @p97networks or visit www.p97.com. </SponsorMessage>
+    <SponsorName>P97 Networks</SponsorName>
+    <SponsorUrl>The Complete Multi-Channel Mobile Commerce Solution</SponsorUrl>
+    <Title>Componentizing the Web with ASP.NET MVC 6 and Polymer</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Stephen Fulcher is a serial entrepreneur focused on delivering technology products and services that transform business strategies. After working with Microsoft as a Principal Engineer and Regional Director, Stephen founded Crocodile Digital to bring game-changing technology to businesses. Along the way, he has been a speaker at numerous technology conferences, developer meetings and product launches. </AboutSpeaker>
+    <CommentsText>This will be our annual meeting to elect the Executive Board members for HDNUG. We are always looking for volunteers to help us make HDNUG Houston's best developer community! We welcome your participation and your nominations!</CommentsText>
+    <CommentsTitle>HDNUG Board Elections</CommentsTitle>
+    <IncludeSpecialComments>true</IncludeSpecialComments>
+    <MeetingDate>2016-01-14T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston Meeting Facility &#xD;
+750 Town and Country Blvd., Ste. 1000&#xD;
+Houston, TX 77042 </MeetingLocation>
+    <SessionAbstract>This session is an adventure in the new ASP.NET 5 runtime. We will dissect the new platform, starting with an inspection of the .NET Core 5 and the cross-platform .NET Execution Environment (DNX). After exploring installation, binaries, internals and types, we'll look at how this new platform fits into Visual Studio 2015 and how it is integrated with the IIS architecture to form a new request runtime for ASP.NET 5 applications. We’ll finish up by examining the request lifecycle in the new and unified MVC 6 for UI and Web API.</SessionAbstract>
+    <SpeakerFirstName>Stephen</SpeakerFirstName>
+    <SpeakerLastName>Fulcher</SpeakerLastName>
+    <SponsorMessage>In the ever-changing field of Information Technology, choosing the right recruiting firm is as critical as keeping your skills up to date. With Nesco Resource as your recruiting firm, you can be assured of having access to great options for your next career adventure. Whether you work with legacy systems or lean towards leading edge technologies, Nesco can help you choose the best path of success. With over 40 years of placement experience in the Information Technology arena, you can trust Nesco to place you on interesting and challenging assignments for long or short term projects.&#xD;
+&#xD;
+www.nescoresource.com</SponsorMessage>
+    <SponsorName>Nesco Resource</SponsorName>
+    <SponsorUrl>Let Nesco Work For You</SponsorUrl>
+    <Title>The New ASP.NET 5 Runtime</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Joseph earned his Master of Science in Information Technology, with a focus in Software Architecture from Capella University in 2009.&#xD;
+With a Bachelor in Psychology, a Master’s in IT, and graduate work in Technical Communications, Joe offers a unique variety of C# and app development expertise. He is an organizer and speaker at Houston area .Net user groups, blogs here at InfoCraft, and is a member of the Lonestar College IT Advisory Board.  When not working in the office or at home, he can generally be found at St Jonah Orthodox Church, or rolling dice with his various gaming friends.&#xD;
+In January of 2013, Joseph was honored to receive the Microsoft C# MVP award.&#xD;
+    </AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2016-02-11T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston Meeting Facility &#xD;
+750 Town and Country Blvd., Ste. 1000&#xD;
+Houston, TX 77042 </MeetingLocation>
+    <SessionAbstract>Visual Studio released in the summer of 2015, and with it came C# 6. Joe will be reviewing some of the new language features. In addition, you will get to see how those features work, not just in the latest version of .Net (4.6), but in prior versions. Finally, Joe will try to help you determine which features you should focus on adopting immediately, and which ones you can gradually adopt, as the need arises.&#xD;
+The session will loosely follow a series of blog posts currently being written at Joe’s website. You can get a sneak peak at http://www.infocraft.net/tag/new-features/</SessionAbstract>
+    <SpeakerFirstName>Joe</SpeakerFirstName>
+    <SpeakerLastName>Reynolds</SpeakerLastName>
+    <SponsorMessage>TEKsystems helps our clients accomplish their business goals through IT staffing solutions, talent management insight and a suite of IT services. Our experience, client network, resources and industry-leading position enable us to offer IT professionals the best job opportunities on a contract, contract-to-hire or direct placement basis.</SponsorMessage>
+    <SponsorName>TekSystems</SponsorName>
+    <SponsorUrl>Our people make IT possible.</SponsorUrl>
+    <Title>C# 6.0 New Features</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>At P97 Networks, Jamy is responsible for delivering highly available distributed applications hosted on Microsoft’s Azure cloud platform. After graduating from the University of Houston with a degree in Applied Mathematics, he entered the workforce in the industrial automation industry focused on mobile technology integration. Enterprise software systems based on SOAP and WCF eventually lead him to Restful JSON services. He spends most of his time now developing C# Web API and Azure Service Bus on top of many storage back-ends. </AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2016-03-10T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>In this talk we will discuss Microsoft’s Azure Service Fabric and how it fits in to the future of hosting distributed web applications. To put it in to context, we will briefly go through the past and current models and how those have informed the next generation of hosting technologies. Comparisons will be made to open source options and containerization technologies. Finally, we’ll take a look at the developer experience of using Azure Service Fabric and talk about some of the problems that are resolved by delivering applications on the platform. </SessionAbstract>
+    <SpeakerFirstName>Jamy</SpeakerFirstName>
+    <SpeakerLastName>Ryals</SpeakerLastName>
+    <SponsorMessage/>
+    <SponsorName>P97 Networks</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>Azure Service Fabric - Next Gen PaaS</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>As Vice President of Consulting of Improving Enterprises Houston, Devlin Liles assists in leading the technology strategy and direction for the business as well as all aspects of consultant engagement. In an industry that is constantly innovating, Devlin believes as a passionate technologist it is his responsibility to maintain the cutting edge on his clients’ behalf. He prides himself on staying a generalist, but his passion in development is data and its interactions. &#xD;
+Devlin has an entrepreneurial mindset and has been a key contributor to growth and success of the Houston office being one of the founding employees in 2011. Since 2007, he has been presenting and teaching classes on software development practices and tools to audiences around the nation including user groups, conferences, and community events. &#xD;
+Liles holds the prestigious Microsoft MVP Award for the past 5 years which is only awarded to 3,000 technologists’ annually. He became published along with his good friend Tim Rayburn as authors of Entity Framework 4.1 Experts Cookbook. When he is not in front of a crowd or behind a computer Devlin is an avid soccer player and hobbyist gamer.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2016-04-14T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>So you want to do rocket surgery? Let’s start with something slight easier and way cooler, Expression Trees. They are a great tools that very few understand, and even fewer can use well. We will dive into what an expression tree is, and how to tear them apart to bend them to our business world conquering will. Then we will build upon that success and tackle even easier techniques like Recursion, Reflection, and Code Dom Generation. If you have questions, bring them and we¬¬¬ will attempt to answer them with a fervor often times reserved for debating which is better, Vim vs EMACs.</SessionAbstract>
+    <SpeakerFirstName>Devlin</SpeakerFirstName>
+    <SpeakerLastName>Liles</SpeakerLastName>
+    <SponsorMessage> Finding the right candidate is time consuming. So is finding the right job. And let's be honest, don't you have enough on your plate already? That's where Clearpoint comes in.&#xD;
+Clearpoint is the staffing partner of choice for many of Houston's top employers. Companies trust us to fill open technology and creative positions with talented professionals because of our successful track record, years of experience, and extensive network of amazing talent. &#xD;
+Job seekers love Clearpoint's connections in the job market and high standards for representing skilled professionals. When you consider our paid benefits and profit-sharing for contractors, Clearpoint stands head and shoulders above the rest. That's because we do business the right way, and we treat you right.&#xD;
+    </SponsorMessage>
+    <SponsorName>ClearPoint</SponsorName>
+    <SponsorUrl>Gears Always Turning</SponsorUrl>
+    <Title>Beginner’s guide to mind bending: Expression Trees, Recursion, and Reflection</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Curtis Schlak has developed for the Web for over 20 years. He likes to write software. He likes to help others write software. He likes to help others work the process so they can write software. You can learn more about him at «curtis.schlak.com».</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2016-05-12T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>Microsoft has thrown its weight behind Web Components, now, with implementing the standards into Edge and sponsoring X-tag with a full-time development resource. Come learn how to use this library to create Web Components that play nicely in all the major browsers and with other Web Components.</SessionAbstract>
+    <SpeakerFirstName>Curtis</SpeakerFirstName>
+    <SpeakerLastName>Schlak</SpeakerLastName>
+    <SponsorMessage>Whitaker IT provides quality contract, contract-to-hire, and direct-hire staffing solutions for a wide variety of enterprises and organizations with a specialized focus in ERP (Oracle, SAP and PeopleSoft), business and custom applications including Java, Microsoft, and Open Source Technologies, and Healthcare IT. Our new website streamlines our offerings and job search capabilities, making it easier to identify your next team member or career opportunity more efficiently.&#xD;
+Learn more at http://www.whitakerit.com.</SponsorMessage>
+    <SponsorName>WhitakerIT</SponsorName>
+    <SponsorUrl>Project Support, Staff Augmentation and Direct-Hire Search for the IT Industry</SponsorUrl>
+    <Title>X-Tag, the Microsoft-Sponsored Web Component Library</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>A long time ago, in a galaxy far, far away, an English Lit major was offered some beer money to write a small database application. And so it started. Now, twenty-some-odd years later, this same guy is still writing code and loving every minute of it. Now a Senior Architect with Hitachi Consulting, he builds all kinds of applications for customers large and small. When he's not coding (and it's not raining), he rides his Kawasaki Concours 14, hangs out with his family and sometimes even plays computer games. He's also the President of the Houston .Net User's Group, one of the oldest .Net-only user groups in the country, if not the world.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2016-06-09T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>Logging. Just the very word often brings fear, dread and loathing to even the most hardened developer. It's tedious, boring stuff ... but absolutely essentially to building maintainable and supportable solutions. Yet it often goes undone simply because it's so boring and tedious. &#xD;
+But it doesn't have to be that way. In this talk, we'll look at how NLog can help ease your logging pain by providing a flexible, configurable and highly performant logging infrastructure. We'll also touch (just a little) on how you can extend NLog to meet your custom requirements. </SessionAbstract>
+    <SpeakerFirstName>J</SpeakerFirstName>
+    <SpeakerLastName>Sawyer</SpeakerLastName>
+    <SponsorMessage>Improving is a technology management and consulting services firm deeply rooted in our commitment to establishing trust — not only with each other but with our clients, partners, communities, and others. We aspire to do this through creating transparency, delivering results, continuously improving, clarifying expectations, and keeping our commitments.&#xD;
+Find out more at www.improving.com.</SponsorMessage>
+    <SponsorName>Improving</SponsorName>
+    <SponsorUrl>Trusted IT Solutions</SponsorUrl>
+    <Title>All Your Log R Belong 2 Us! Logging with NLog</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Scott J. Peterson, Chief Solution Architect and Developer of Liquid Daffodil is a Microsoft Certified Solution Developer and Trainer, and has been developing software for Microsoft platforms (starting with Windows 2.0) in 1989 with the “Thunder” BETA of Visual Basic. Scott and his wife Amy reside in Richmond, Texas, and are parents of 10 children. &#xD;
+ABOUT LIQUID DAFFODIL: &#xD;
+Formally established in 2010, Liquid Daffodil is a Microsoft Partner and provider of Microsoft Enterprise Solutions for both Business and Consumer audiences throughout the world. Although Liquid Daffodil primarily develops compliance and records management solutions for medium to large organizations within the Gas &amp; Oil sectors, (developing solutions for companies such as COMPAQ, Continental Airlines, Exxon, Shell, Halliburton, Microsoft, and MSN Canada) they are also one of the earliest, most recognized, and highest rated creators of some of the most popular paid apps in the Windows Store(s), starting with Outsider for Windows Phone 7 (one of the first 3rd party apps to near the one-million download mark) and continuing through today with Bandsider (currently the Top Paid app in the U.S. Store), fanband (currently the #2 app under Bandsider in Health &amp; Fitness in the U.S. Store), and Cortanium which remains in the Top 20 Paid downloads in most English speaking regions worldwide. To date, Liquid Daffodil has had 14 apps reach the #1 spot in numerous categories, including Social, Health &amp; Fitness, Lifestyle, and Business. Liquid Daffodil continues to be the most experienced and successful developer of Microsoft Band-integrated solutions in the world. </AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2016-07-14T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>With the advent of machine learning, speech and voice integration, and language understanding and intelligence, Cortana has become Microsoft’s “face” for personal assistant integration. This session will walk through documented, undocumented (and even slightly crazy) ways developers can choose, use, and abuse Cortana to create apps and services that love to hear “Ask me anything”. </SessionAbstract>
+    <SpeakerFirstName>Scott</SpeakerFirstName>
+    <SpeakerLastName>Peterson, MCSD, MCPSB, MCT</SpeakerLastName>
+    <SponsorMessage>Clear, relevant values that translate to positive job search and work experiences for the individual are, by definition, wins for our client. We believe substance and action are our greatest assets and that showing you is far better than telling you.</SponsorMessage>
+    <SponsorName>Genuent</SponsorName>
+    <SponsorUrl>Your Dream Job is Just Around the Corner</SponsorUrl>
+    <Title>Hacking Cortana</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Paul DeCarlo is a Microsoft Technology Evangelist and Professor for the Bauer College of Business at the University of Houston. His current technology interests focus on Internet of Things, Cloud Applications, and Cross-Platform mobile app development. He is also an experienced startup founder for WinCoder LLC ( http://wincoder.co ) which focuses on Windows application development, including Searchler, a Pandora type service for Music Videos running on Microsoft Azure. On weekends Paul performs as lead vocalist in Houston's Tool Tribute band - Spiral Out (spiraloutband.com)</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2016-08-11T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>With datacenters operating in 24 regions around the world, the Azure Cloud allows for scalable deployment of popular networked services.  These include common deployment scenarios of Virtual Machines (Linux/Windows), Databases (MySQL/SQL/NoSQL), and managed web applications (Node/PHP/Java/Python/.NET).  In addition, the Azure Cloud exposes a platform for developing Internet of Things solutions, Machine Learning experiments, and Artificial Intelligence services.  In this session, we will cover these topics and more using live demonstrations of the components in action.  Attendees will gain a holistic view of how cloud services can be leveraged in a variety of developer scenarios.</SessionAbstract>
+    <SpeakerFirstName>Paul</SpeakerFirstName>
+    <SpeakerLastName>DeCarlo</SpeakerLastName>
+    <SponsorMessage>Arcurve is an independent software services company specializing in custom software development, integration and implementation and managed application services, supporting the full software lifecycle. Since 2006 we've helped our clients by giving honest advice and producing superior software.  Today we have a world class team of professionals and domain experts who create strong, lasting client relationships allowing us to provide the most practical software skills and expertise possible.&#xD;
+ &#xD;
+Arcurve fosters an environment of collaboration, which ultimately means working effectively with our clients. The team has a proven track record of executing projects on time and on budget. Our team members are highly skilled software professionals who have earned the respect of their industry peers and our clients by approaching projects with integrity and accountability.   Learn more about Arcurve (http://www.arcurve.com/)&#xD;
+    </SponsorMessage>
+    <SponsorName>Arcurve</SponsorName>
+    <SponsorUrl>Arcurve specializes in full lifecycle software services.</SponsorUrl>
+    <Title>Microsoft Azure Cloud Services</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>As Vice President of Consulting of Improving Enterprises Houston, Devlin Liles assists in leading the technology strategy and direction for the business as well as all aspects of consultant engagement. In an industry that is constantly innovating, Devlin believes as a passionate technologist it is his responsibility to maintain the cutting edge on his clients’ behalf. He prides himself on staying a generalist, but his passion in development is data and its interactions. &#xD;
+&#xD;
+Devlin has an entrepreneurial mindset and has been a key contributor to growth and success of the Houston office being one of the founding employees in 2011. Since 2007, he has been presenting and teaching classes on software development practices and tools to audiences around the nation including user groups, conferences, and community events. &#xD;
+&#xD;
+Liles holds the prestigious Microsoft MVP Award for the past 6 years which is only awarded to 3,000 technologists’ annually. He became published along with his good friend Tim Rayburn as authors of Entity Framework 4.1 Experts Cookbook. When he is not in front of a crowd or behind a computer Devlin is an avid soccer player and hobbyist gamer.&#xD;
+    </AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2016-09-08T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>In this session we will dive into how formally and informally organizations measure value. This will help us highlight behavior that is common in IT that decreases our value in the organization. Once we have identified these behaviors, we can dive into how to fix them. These problems range from the simple (like writing an Email) to the complex (like managing expectations of those that you don’t know).</SessionAbstract>
+    <SpeakerFirstName>Devlin</SpeakerFirstName>
+    <SpeakerLastName>Liles</SpeakerLastName>
+    <SponsorMessage>Improving is a technology management and consulting services firm deeply rooted in our commitment to establishing trust — not only with each other but with our clients, partners, communities, and others. We aspire to do this through creating transparency, delivering results, continuously improving, clarifying expectations, and keeping our commitments.&#xD;
+Find out more at www.improving.com.</SponsorMessage>
+    <SponsorName>Improving</SponsorName>
+    <SponsorUrl>Trusted IT Solutions</SponsorUrl>
+    <Title>How to build Career Wealth in IT</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Matthew D. Groves is a guy who loves to code.  It doesn't matter if it's C#, jQuery, or PHP: he'll submit pull requests for anything.  He has been coding ever since he wrote a QuickBASIC point-of-sale app for his parent's pizza shop back in the 90s.  He currently works as a Developer Advocate for Couchbase. His free time is spent with his family, watching the Reds, and getting involved in the developer community.  He is the author of AOP in .NET (published by Manning), and is also a Microsoft MVP.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2016-10-13T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>What is different about this generation of web applications? A solid development approach must consider latency, throughput, and interactivity demanded by users users across mobile devices, web browsers, and IoT. This applications often use NoSQL to support a flexible data model and easy scalability required for modern development. A full stack application (composed of Couchbase, WebAPI, Angular2, and ASP.NET/ASP.NET Core) will be demonstrated in this session. The individual parts of a stack may vary, but the overall design is the focus.</SessionAbstract>
+    <SpeakerFirstName>Matthew</SpeakerFirstName>
+    <SpeakerLastName>Groves</SpeakerLastName>
+    <SponsorMessage>WHAT WE DO: Apex Systems is an IT staffing and services firm. We specialize in providing IT professionals for contract, contract-to-hire, and direct placements.&#xD;
+&#xD;
+OUR CREDENTIALS: Apex is in the top 1 percent of all staffing companies and combines with parent company On Assignment to be the 2nd largest IT staffing firm in the U.S. Apex has been named to the Best of Staffing - Client list five years in a row.&#xD;
+ &#xD;
+WHO OUR CUSTOMERS ARE: We serve Fortune 500, mid-market, and emerging companies from a wide variety of industries, including financial services, government services, communications, technology, healthcare, energy &amp; utilities and others. &#xD;
+ &#xD;
+WHERE WE ARE: Apex has branch locations in 69 markets all across the country and a staff of more than 950 people dedicated to servicing you. You can always connect with a local Account Manager or Recruiter. </SponsorMessage>
+    <SponsorName>Apex Systems</SponsorName>
+    <SponsorUrl>Resources for a Digital World</SponsorUrl>
+    <Title>Full Stack Development with .NET and NoSQL</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>J is Senior Architect for Hitachi Consulting that absolutely loves to write code and build cool, innovative solutions to hard problems. Unknown to many, he also has been building his own PCs since 1994 and home networks since 1999. &#xD;
+He's been involved with the Houston .NET User's Group (HDNUG) since its inception in 2001 and currently serves as the President. &#xD;
+    </AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2016-11-10T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>Just in time to help you build you list for Santa, J Sawyer will talk to you about hardware as well as optimizing - or even building out - your home network. We'll start with a whirlwind review of the latest hardware upgrades and options - whether you're for a new PC or laptop or just breathing new life into an older machine. From there, we'll get into the basics of optimizing your home WLAN and then talk about how to build out a full network for your digital lifestyle with shared storage, streaming media, and even automated backups and remote access. Examples will come from J's own home network that supports a variety of devices.</SessionAbstract>
+    <SpeakerFirstName>J</SpeakerFirstName>
+    <SpeakerLastName>Sawyer</SpeakerLastName>
+    <SponsorMessage/>
+    <SponsorName i:nil="true"/>
+    <SponsorUrl i:nil="true"/>
+    <Title>Hardware and Home Networking</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>As Vice President of Consulting of Improving Enterprises Houston, Devlin Liles assists in leading the technology strategy and direction for the business as well as all aspects of consultant engagement. In an industry that is constantly innovating, Devlin believes as a passionate technologist it is his responsibility to maintain the cutting edge on his clients’ behalf. He prides himself on staying a generalist, but his passion in development is data and its interactions. &#xD;
+ Devlin has an entrepreneurial mindset and has been a key contributor to growth and success of the Houston office being one of the founding employees in 2011. Since 2007, he has been presenting and teaching classes on software development practices and tools to audiences around the nation including user groups, conferences, and community events. &#xD;
+ Liles holds the prestigious Microsoft MVP Award for the past 6 years which is only awarded to 3,000 technologists’ annually. He became published along with his good friend Tim Rayburn as authors of Entity Framework 4.1 Experts Cookbook. When he is not in front of a crowd or behind a computer Devlin is an avid soccer player and hobbyist gamer.&#xD;
+    </AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2017-01-12T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>We have all come across those great developers in our careers. They seem to fall into the right answer and make it look so easy to deliver great quality software so quickly. The true is though it is not an innate ability but the application of many deliberate practices. Those practices include some that help to avoid distraction, staying blocked to long, break down problems, and many others. In many years of developing software in teams I have realized that we can learn new practices from just about everyone. In this talk we will look at the 7 most important practices I have found and adopted. This talk with have a technical tilt and some code, but will have value for anyone working with developers.</SessionAbstract>
+    <SpeakerFirstName>Devlin</SpeakerFirstName>
+    <SpeakerLastName>Liles</SpeakerLastName>
+    <SponsorMessage>Visit White Rhino Financial at www.whiterhinofinancial.com.</SponsorMessage>
+    <SponsorName>White Rhino Financial</SponsorName>
+    <SponsorUrl>Rethink Wealth</SponsorUrl>
+    <Title>7 Habits of Highly Effective Developers</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Claudio is a Principal Consultant at Improving Houston. He has been developing software for 25+ years. When not building software, consulting with clients, doing presentations, delivering training, or hanging out with his family, he can probably be found working on his music. Check out his blog at www.lassala.net</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2017-02-09T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>Outdated technology? Unmaintainable codebase? Politics? Those are just some of the reasons that cause software rewrites. Whether a rewrite is really what is needed or not, chances are we all work in such projects.&#xD;
+&#xD;
+&lt;i&gt;Do we rewrite the entire software? Can we rewrite just parts of it? Where do we start? Can we automate the process?&lt;/i&gt;&#xD;
+&#xD;
+In the last 15 years, I've worked in a variety of such projects. I'd like to share the most important lessons I've learned in these projects. In this talk, I'll share the different types of rewrites and techniques, what I learned from it, and how it changed my way of approaching both software rewrites as well as greenfield projects.&#xD;
+    </SessionAbstract>
+    <SpeakerFirstName>Claudio</SpeakerFirstName>
+    <SpeakerLastName>Lassala</SpeakerLastName>
+    <SponsorMessage/>
+    <SponsorName i:nil="true"/>
+    <SponsorUrl i:nil="true"/>
+    <Title>The Software Does Not Work? Rewrite it!</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Jane is a software architect and developer, an Agile proponent, and a great believer in building valuable software that users love to use. She builds large back-end systems that require high-performance and high-reliability, and process vast amounts of data. Jane believes that successful software is created by strong teams, requires good engineering practices, and evolves in close collaboration with the users. As a Principal Consultant for Improving Enterprises, Jane works with distributed teams on distributed software. As a member of a consulting team, Jane is  focused on technical excellence, close contact with the client, and rapid iterations.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2017-03-09T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>Code reviews often become the Hunger Games of software development process. Long hours of code shaming and humiliation, never-ending dogma wars, temperature-raising tension on the team. &#xD;
+Yet, code reviews can be productive, fun, and a powerful tool to improve the developer community. Regularly reviewing other people’s code is a great way to increase code ownership, develop a common code style, and share coding knowledge across the team. &#xD;
+In this session we’ll learn how to set up effective and kind code reviews. Talk about preparation and follow up that would allow us to capture the most benefits.  We will also consider how to ensure that the code review is helping to build and empower the team, not destroy it. </SessionAbstract>
+    <SpeakerFirstName>Jane</SpeakerFirstName>
+    <SpeakerLastName>Prusakova</SpeakerLastName>
+    <SponsorMessage>WHAT WE DO:&#xD;
+Apex Systems is a division of the 2nd largest IT staffing and services firm in North America. From consulting to staff augmentation, we provide resources for companies in all industries. In 2016, Apex had over 30,360 tech professionals on assignment with clients across North America.&#xD;
+ &#xD;
+OUR CREDENTIALS: &#xD;
+Apex earned Inavero’s 2017 Best of Staffing™ Client Diamond and Talent Awards for providing superior service to clients and job seekers, putting the company in the top 2 percent of all U.S. staffing agencies.&#xD;
+ &#xD;
+WHO OUR CUSTOMERS ARE: &#xD;
+We serve Fortune 500, mid-market, and emerging companies from a wide variety of industries, including communications, energy, financial services, government services, healthcare, technology, and utilities. &#xD;
+&#xD;
+WHERE WE ARE: &#xD;
+Apex has branches in over 60 locations across the U.S. and Canada and more than 1,000 employees dedicated to supporting the needs of our clients and contract team members. Visit www.apexsystems.com to find a local branch or connect with an Account Manager or Recruiter.</SponsorMessage>
+    <SponsorName>Apex Systems</SponsorName>
+    <SponsorUrl>Resources for a Digital World</SponsorUrl>
+    <Title>Code Reviews</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Stephen is an entrepreneur -- passionate about creating and investing in technology products and services that transform business. After working at Microsoft through the .NET launch days, he has been instrumental in a small collection of technology startups. He is currently CEO at Crocodile Digital Corporation. Crocodile Digital specializes in business application development on .NET and open source platforms, with additional capabilities in mobile app development and agency services for online marketing. He also has a role on the leadership teams at other product-focused startups in the healthcare and online marketing sectors. Over the course of the .NET era, he has developed a personal interest and expertise in the runtimes of the .NET web stacks. </AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2017-04-13T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>Let's explore ASP.NET Core! In this session, we'll go through the request lifecycle in the ASP.NET Core runtime, focusing on the key runtime and extensibility types that control request behavior. We will look in some detail at the Middleware architecture. We will learn about how Middleware components work, and check out the built-in Middleware components. We’ll investigate how to set them up, leverage them in our apps, and build our own.  </SessionAbstract>
+    <SpeakerFirstName>Stephen</SpeakerFirstName>
+    <SpeakerLastName>Fulcher</SpeakerLastName>
+    <SponsorMessage>Interested in sponsoring this meeting? Let us know! </SponsorMessage>
+    <SponsorName>throw new System.NullReferenceException("We need a sponsor!");</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>Exploring the ASP.NET Core Runtime Components</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>About Eric : I like finding better ways to do things or to help people out. "Good enough" never feels like "good enough."&#xD;
+&#xD;
+About Devlin : As President of Consulting of Improving Enterprises Houston, Devlin Liles assists in leading the technology strategy and direction for the business as well as all aspects of consultant engagement.&#xD;
+    </AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2017-05-11T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>Enough Hullabaloo about TDD.  Come watch as we build a simple application from zero code.  One of us has an idea what to build, the other is coming in completely cold.  We'll struggle through the whole thing right in front of your eyes, demonstrating how we use tests to drive the implementation.  We'll also cover the basics of TDD in a few quick slides at the beginning of the presentation, and take any questions you might have.</SessionAbstract>
+    <SpeakerFirstName>Eric Burcham and</SpeakerFirstName>
+    <SpeakerLastName>Devlin Liles</SpeakerLastName>
+    <SponsorMessage>OUR PHILOSOPHY&#xD;
+Genuent believes in straightforward principles and approaches. Our beliefs help us define our customer’s problems and create clear, effective solutions. We stay focused on the Information Technology space to ensure that our efforts are relevant to you and your mission.&#xD;
+A part of our core values come from learning about our client, asking questions, understanding the client needs and determining the best solution to exceed expectations. We take pride in having long-term client relationships, allowing our team to join the conversation and provide fresh views to achieve new goals.&#xD;
+In conjunction with working side by side with our clients, Genuent continues to seek knowledge and invest in developing our own staff and Consultants. As a team we value growing our efforts and streamlining our processes to provide effective solutions to our clients.&#xD;
+&#xD;
+OUR VISION&#xD;
+Genuent is a national expert in delivering Talent and resource solutions, producing a partnership between our Consultants and clients, which help them solve complex technology and business challenges.&#xD;
+    </SponsorMessage>
+    <SponsorName>Genuent</SponsorName>
+    <SponsorUrl>Innovative Talent Solutions</SponsorUrl>
+    <Title>TDD By Example</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Denis Akhiyarov, Senior Consultant at Wood Group in Intelligent Operations group, is also pythonnet core developer and contributor to pythonnet since 2014. He was passionate about programming since high school, where he learned Pascal. He used this language and numerical simulations to win 3rd place in the national Theoretical Mechanics competition in 2005 as a part of university team. After trying Pascal, Matlab, VBA, Mathematica, and C++/CLI, he decided to settle on C# and Python for solving practical problems at work. Denis has experience in numerical methods, optimization problems, data analytics, and real-time models for providing value to large-scale systems.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2017-06-08T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>Python for .NET (pythonnet) is a package that gives Python programmers nearly seamless integration with the .NET 4.0+ Common Language Runtime (CLR) on Windows and Mono runtime on Linux and OSX. Python for .NET provides a powerful application scripting tool for .NET developers. Using this package you can script .NET applications or build entire applications in Python, using .NET services and components written in any language that targets the CLR (C#, VB.NET, F#, C++/CLI).&#xD;
+Note that this package does not implement Python as a first-class CLR language - it does not produce managed code (IL) from Python code. Rather, it is an integration of the CPython engine with the .NET or Mono runtime. This approach allows you to use CLR services and continue to use existing Python code and C-API extensions while maintaining native execution speeds for Python code. &#xD;
+The purpose of this talk is to provide .NET and Python developers with methods to use both languages effectively for interoperability and simple integration without writing boilerplate code.</SessionAbstract>
+    <SpeakerFirstName>Denis</SpeakerFirstName>
+    <SpeakerLastName>Akhiyarov</SpeakerLastName>
+    <SponsorMessage/>
+    <SponsorName i:nil="true"/>
+    <SponsorUrl i:nil="true"/>
+    <Title>Python for .NET</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker/>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2017-07-13T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract/>
+    <SpeakerFirstName>Daniel</SpeakerFirstName>
+    <SpeakerLastName>White</SpeakerLastName>
+    <SponsorMessage/>
+    <SponsorName i:nil="true"/>
+    <SponsorUrl i:nil="true"/>
+    <Title i:nil="true"/>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>As Vice President of Consulting of Improving Enterprises Houston, Devlin Liles assists in leading the technology strategy and direction for the business as well as all aspects of consultant engagement. In an industry that is constantly innovating, Devlin believes as a passionate technologist it is his responsibility to maintain the cutting edge on his clients’ behalf. He prides himself on staying a generalist, but his passion in development is data and its interactions. &#xD;
+&#xD;
+Devlin has an entrepreneurial mindset and has been a key contributor to growth and success of the Houston office being one of the founding employees in 2011. Since 2007, he has been presenting and teaching classes on software development practices and tools to audiences around the nation including user groups, conferences, and community events. &#xD;
+&#xD;
+Liles holds the prestigious Microsoft MVP Award for the past 6 years which is only awarded to 3,000 technologists’ annually. He became published along with his good friend Tim Rayburn as authors of Entity Framework 4.1 Experts Cookbook. When he is not in front of a crowd or behind a computer Devlin is an avid soccer player and hobbyist gamer.&#xD;
+    </AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2017-08-10T00:00:00</MeetingDate>
+    <MeetingLocation>Microsoft Houston MTC &#xD;
+750 Town and Country Blvd., Suite 1000 &#xD;
+Houston, TX 77024</MeetingLocation>
+    <SessionAbstract>If you look at the greats ( Michael Jordan, Tiger Woods, Michael Phelps, Wayne Gretzky, Tom Brady, Pele ) in their prime, they all share one big trait. It is the same with great developers. They are brilliant at the fundamentals, and we have lost some of that as an industry. In this talk we are going to re-start the art of good design. We will tear into a big problem, with hairy corners, and lots of design pitfalls. We will then apply some of those fundamentals, and see what happens. Bring your laptop if you would like to go through the code with me while we explore how easy good code can be.</SessionAbstract>
+    <SpeakerFirstName>Devlin</SpeakerFirstName>
+    <SpeakerLastName>Liles</SpeakerLastName>
+    <SponsorMessage/>
+    <SponsorName i:nil="true"/>
+    <SponsorUrl i:nil="true"/>
+    <Title>Lost Art of Good Object Design</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Claudio is a Principal Consultant at Improving Houston. He has been developing software for 25+ years. When not building software, consulting with clients, doing presentations, delivering training, or hanging out with his family, he can probably be found working on his music. Check out his blog at www.lassala.net&#xD;
+Claudio can be found on Twitter, LinkedIn, Facebook.&#xD;
+When not writing code, Claudio is probably rocking out with his band, Descent Into Madness.</AboutSpeaker>
+    <CommentsText>Please note the new location for the meeting. We will be meeting at the Improving Houston office, just a little ways from our previous meeting location. </CommentsText>
+    <CommentsTitle>NEW LOCATION!!</CommentsTitle>
+    <IncludeSpecialComments>true</IncludeSpecialComments>
+    <MeetingDate>2017-10-12T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>As part of the work I’ve been doing for many years, I get to do a lot of code review. I usually document things that come up doing a code review so I can share it with other developers in the teams. In this session, I share some of the code I’ve looked at, the reasons why the code raised yellow or red flags in my head, and possible solutions I’ve proposed.</SessionAbstract>
+    <SpeakerFirstName>Claudio</SpeakerFirstName>
+    <SpeakerLastName>Lassala</SpeakerLastName>
+    <SponsorMessage>Arcurve is an independent software services company. Since 2006 we've helped our clients by giving honest advice and delivering superior software.&#xD;Focusing on the business goals of our clients and providing pragmatic technical solutions has resulted in a track record of successfully delivered projects in Enterprise software, custom software development and integration.&#xD;Arcurve fosters an environment of collaboration, which ultimately means working effectively with our clients. The team has a proven track record of executing projects on time and on budget. Our team members are highly skilled software professionals who have earned the respect of their industry peers and our clients by approaching projects with integrity and accountability.&#xD;
+Learn more at http://www.arcurve.com/.</SponsorMessage>
+    <SponsorName>Arcurve</SponsorName>
+    <SponsorUrl>Real. Software. Results</SponsorUrl>
+    <Title>Code Review: I mean no harm!</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>David Walker is a Sitecore 2015 Technology MVP and Principal Solution Architect at Clear Measure. He has over twenty years of experience in application development and lifecycle management with over eighty percent of that as a consultant. He has been an MCP since 2003, MCAD and MCSD since 2005 and was a 3x Microsoft MVP - ASP/ASP.NET from July 2007 - July 2009. He has been hooked on Sitecore, since achieving his Sitecore Certified Developer on v 5.1 in 2007. In October 2017, he also passed his v 8.2 certification to become a Professional Sitecore Developer.</AboutSpeaker>
+    <CommentsText>Join us for a special combined meeting with the Houston Sitecore User group (http://houstonsug.com) and learn a little about the enterprise-grade web content management and eCommerce awesomeness with Sitecore!</CommentsText>
+    <CommentsTitle>Special Meeting with Houston Sitecore User Group!</CommentsTitle>
+    <IncludeSpecialComments>true</IncludeSpecialComments>
+    <MeetingDate>2017-11-09T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>On October 17th, Sitecore announced and released their largest wave of innovation yet, with their release of Sitecore® Experience Platform™ (XP) 9 and the Sitecore Experience Cloud™. If you haven't heard of it, don't worry. I will get you up to speed on what you have been missing out on. I will show you how this single .NET based platform enables you to deliver the most exciting multi-channel digital experience possible for your customers.</SessionAbstract>
+    <SpeakerFirstName>David</SpeakerFirstName>
+    <SpeakerLastName>Walker</SpeakerLastName>
+    <SponsorMessage>This month's sponsor is Charlie Teague.  He is the Vice President of the Houston Dot Net User Group, HDNUG.  He is sponsoring our HDNUG group this month because it is his desire to do whatever he can to encourage sharpening your .Net skills. As VP of HDNUG, he is responsible for organizing our sponsors who make it possible for our group to operate.  If you want to sponsor our group next year, you can reach him on his cell phone at 713-487-7228.</SponsorMessage>
+    <SponsorName>Charles Teague</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>Sitecore 9, Sitecore Forms and More!</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>J is a Senior Architect for Hitachi Consulting based in Houston, TX and who loves to write code and build cool, innovative solutions to hard problems. &#xD;
+When not coding, J likes to hang out with his family, play with his computers and ride his Kawasaki Concours 14. But he doesn't code and ride at the same time. That would be bad.</AboutSpeaker>
+    <CommentsText>It's that time ... our yearly board elections! All positions are open and volunteers are always appreciated!</CommentsText>
+    <CommentsTitle>HDNUG Board Elections</CommentsTitle>
+    <IncludeSpecialComments>true</IncludeSpecialComments>
+    <MeetingDate>2018-01-11T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Wouldn't it be nice if we could have full RPC-type functionality in our web apps, allowing us to call javascript code that's running on a page without require a round trip to the server? Or to feed frequently updated data to clients without polling? How about pushing status of long-running operations down to the client? Oh ... yeah ... and we'd like to do all of this across multiple browsers and clients in a way that scales and works through firewalls. &#xD;
+Sound impossible? It's not. Sound difficult? With SignalR, it's not. In this presentation, we'll take a run around SignalR and how this can be incorporated into a wide variety of applications, from web apps to services to Windows client apps, all using a single API that make real-time push notifications simple and straightforward.</SessionAbstract>
+    <SpeakerFirstName>J</SpeakerFirstName>
+    <SpeakerLastName>Sawyer</SpeakerLastName>
+    <SponsorMessage>.Net Report Builder is a tool that allows.Net developers to add Do It Yourself Ad Hoc reporting feature to their software without much coding and some simple configuration. This means that your end users can quickly and easily build reports that are customized to their needs.  While some software may allow users to generate reports, those reports are often confined to a handful of different templates.  With .Net Report Builder, end users decide what fields are added to the report, how it’s formatted, and much more with a very friendly and intuitive Report Wizard. This is all done from inside your application, so there’s no need to export data or run another program. Find out more and view a LIVE DEMO at http://dotnetreport.com. </SponsorMessage>
+    <SponsorName>.NET Report Builder</SponsorName>
+    <SponsorUrl>The best open-source Ad-Hoc DIY Report Builder solution</SponsorUrl>
+    <Title>Two-Way Web Apps with SignalR</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Mark Reynolds has been creating answers in diverse industries and disciplines – avionics systems, statistical analysis, process management, and real-time processing and analysis. His products and solutions are being used throughout Texas, the United States, North America, and the world. At Southwestern Energy, Mark provides the vision and innovation necessary to identify and implement real-time knowledge and information program. He serves as the ‘connector’ between upstream operations and information solutions, and carried projects into knowledge engineering. </AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2018-02-08T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Just when you though it couldn't get any better, C# v7 bring 10 key new features to Visual Studio 2017. Each of these will be demonstrated in a practical example.</SessionAbstract>
+    <SpeakerFirstName>Mark</SpeakerFirstName>
+    <SpeakerLastName>Reynolds</SpeakerLastName>
+    <SponsorMessage>IPT Global is an industry leader in advanced pressure test planning and leak detection. With a team of 30 and a strong engineering culture committed to delivering excellence, we have an environment that encourages learning and innovation. If that sounds interesting to you, let’s talk about your next opportunity. Contact us at info@3ipt.com or visit our site at www.3ipt.com. </SponsorMessage>
+    <SponsorName>IPT Global</SponsorName>
+    <SponsorUrl>Leading the digital oilfield revolution</SponsorUrl>
+    <Title>Why Do We Want C#7?</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Stephen Fulcher is a serial entrepreneur focused on delivering technology investments that transform business strategies. After working with Microsoft as a Principal Engineer and later as a Regional Director, he founded Crocodile Digital and other companies to bring game-changing technology to businesses. He can be reached at stephen.fulcher@crocodiledigital.net.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2018-03-08T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Extensibility will significantly increase the value and power of software. In this session, we will define it and explore techniques for building in extensibility on the Microsoft stack. We'll consider things past, things present, and things to come. We will also investigate extensibility for different types of applications. As a takeaway, we will learn about ways to extend server side processes through configurable provider frameworks and how to extend application features through dynamic attributes and user defined expressions. Finally, we'll finish by tossing in a few concepts from dynamic languages. </SessionAbstract>
+    <SpeakerFirstName>Stephen</SpeakerFirstName>
+    <SpeakerLastName>Fulcher</SpeakerLastName>
+    <SponsorMessage>TEKsystems helps our clients accomplish their business goals through IT staffing solutions, talent management insight and a suite of IT services. Our experience, client network, resources and industry-leading position enable us to offer IT professionals the best job opportunities on a contract, contract-to-hire or direct placement basis.</SponsorMessage>
+    <SponsorName>TekSystems</SponsorName>
+    <SponsorUrl>Our people make IT possible.</SponsorUrl>
+    <Title>Creating Built-In Extensibility </Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Russ Miles is the Geek on a Harley and CEO of ChaosIQ.io where he and his team build commercial and open source (ChaosToolkit.org) products and provide services to companies applying Chaos Engineering to build confidence in their Cloud Native, Microservice-based systems on Kubernetes, AWS, Pivotal Cloud Foundry and more.&#xD;
+As well as being the Geek, Russ is an international speaker and author of 3 published book, most recently working on "Antifragile Software: Building Adaptable Software with Microservices" where he explores how to apply Chaos Engineering to construct and manage complex, distributed systems in production with confidence.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2018-04-12T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Modern software systems are made up of many moving parts that can fail, that are then built on top of and integrated with systems that can also fail. Throw into this mix the need for these parts to be under the stress of constant change and improvement under the increasing pressures of the business to deliver more and faster, and building systems that are reliable enough to have confidence in is a real challenge. &#xD;
+Enter the discipline of Chaos Engineering. Chaos Engineering is specifically concerned with helping you build confidence in your complex and rapidly evolving applications so you can embrace and thrive on the inherent challenges of the approach. &#xD;
+In this talk, Russ Miles will show you how to discover weaknesses in your complex systems and learn how to overcome them using chaos engineering. Employing a host of real-world examples and using the free and open source Chaos Toolkit, Russ will demonstrate how you can use chaos engineering today to tame your systems and enable them to thrive.&#xD;
+Check out more details at https://www.eventbrite.com/e/geek-on-a-harley-the-road-to-goto-chaos-tour-houston-tickets-43477692950?aff=es2.</SessionAbstract>
+    <SpeakerFirstName>Russ</SpeakerFirstName>
+    <SpeakerLastName>Miles</SpeakerLastName>
+    <SponsorMessage>TEALS (Technology Education and Literacy in Schools) helps high schools throughout the US build and grow sustainable computer science programs. In its proven program, TEALS pairs trained computer science professionals from across the technology industry with classroom teachers to team-teach computer science. Industry volunteers and partner teachers create a ripple effect, impacting the students they teach, and the many students who will study CS in the future. Students want to learn computer science yet most high schools are unable to offer rigorous CS courses. This is where Tech professionals come in! Volunteers with a strong background in computer science and programming form the backbone of TEALS. They volunteer their time in high school classrooms to help close the opportunity gap for thousands of students https://www.tealsk12.org/volunteers/.  Consider volunteering with TEALS in the Houston area for the upcoming 2018-2019 school year! For more information reach out to our Houston Regional Manager, Tonya Davis, at tonya@tealsk12.org. </SponsorMessage>
+    <SponsorName>TEALS</SponsorName>
+    <SponsorUrl>Teaching Education and Literacy in Schools</SponsorUrl>
+    <Title>Geek on a Harley: The Chaos Tour Houston</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Richard Flores is a Director of Consulting with Improving. He has enjoyed working in technology for the past 15 years across multiple disciplines including, Systems Analysis, Project Management and Software Development. Richard is a Microsoft Certified Solution Developer and specializes in creating applications for the web. He is very passionate about SOA and DevOps and in his spare time loves exploring new technologies and platforms. He is also equally passionate about his family and enjoys going out, listening to music, watching movies and taking trips. Richard is a dedicated member of the community and shares his passions for software development as a speaker and online at &lt;a href="richardrflores.com"&gt;richardrflores.com&lt;/a&gt;.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2018-05-10T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Are you and your team still using a shared database for development work? This can cause conflicts over schema changes and a breaking change can shut down your entire team. In this talk, we’ll review some basic rules we should follow to avoid these problems. We’ll also look at the traditional concepts for managing test data and learn how to do it in the cloud using Microsoft Azure. Along the way, we’ll examine the differences between Azure SQL Databases, Azure SQL Server VMs and how we can leverage Azure File Snapshots to get off shared databases. If you’re a developer, QA or play an active role in managing your team’s release pipeline, then this talk is for you.</SessionAbstract>
+    <SpeakerFirstName>Richard Flores</SpeakerFirstName>
+    <SpeakerLastName/>
+    <SponsorMessage>Digitally savvy consumers and employees are reshaping nearly every industry. Organizations are recognizing the need for digital transformation to compete and thrive. How ready are you to rapidly innovate and adapt to new opportunities?&#xD;
+&#xD;
+WSO2 products are uniquely designed to meet today's demands for an agile approach to integration, API management, identity and access management, smart analytics, and the internet of things - all components needed for successful digital business.&#xD;
+&#xD;
+Digital transformation is a continuous journey. Successful digital enterprises establish ongoing innovation practices that celebrate rapid innovation, iteration, and shared learning.</SponsorMessage>
+    <SponsorName>WSO2</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>Pain Free: Avoiding Shared Databases and Managing Test Data In The Cloud</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>As Vice President of Consulting of Improving Enterprises Houston, Devlin Liles assists in leading the technology strategy and direction for the business as well as all aspects of consultant engagement. In an industry that is constantly innovating, Devlin believes as a passionate technologist it is his responsibility to maintain the cutting edge on his clients’ behalf. He prides himself on staying a generalist, but his passion in development is data and its interactions.&#xD;
+&#xD;
+Devlin has an entrepreneurial mindset and has been a key contributor to growth and success of the Houston office being one of the founding employees in 2011. Since 2007, he has been presenting and teaching classes on software development practices and tools to audiences around the nation including user groups, conferences, and community events.&#xD;
+&#xD;
+Liles holds the prestigious Microsoft MVP Award for the past 6 years which is only awarded to 3,000 technologists’ annually. He became published along with his good friend Tim Rayburn as authors of Entity Framework 4.1 Experts Cookbook. When he is not in front of a crowd or behind a computer Devlin is an avid soccer player and hobbyist gamer.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2018-06-14T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>In the world of software there are few topics as sensitive as “architects” on a project. We have seen great ones, and terrible ones. In this talk we will break down the parts of the role, and how each of us can be a better architect. It will include technical details and discussion, as well as a new way to view the code base, software, and requirements we build.</SessionAbstract>
+    <SpeakerFirstName>Devlin</SpeakerFirstName>
+    <SpeakerLastName>Liles </SpeakerLastName>
+    <SponsorMessage>At TEKsystems, a leading provider of IT staffing and IT services, we understand people. Every year we deploy over 80,000 IT professionals at 6,000 client sites across North America, Europe and Asia. Our deep insights into the IT labor market enable us to help clients achieve their business goals. TEKsystems helps our clients accomplish their business goals through IT staffing solutions, talent management insight and a suite of IT services. Our experience, client network, resources and industry-leading position enable us to offer IT professionals the best job opportunities on a contract, contract-to-hire or direct placement basis.</SponsorMessage>
+    <SponsorName>TEKsystems</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>Architect – How to be more than a title and a Visio?</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>I am a Senior Full Stack Software Developer/Architect with in-depth knowledge and working experience in all phases of the Software Development Cycle. I have been writing code as a hobby since I was a kid, it is still my hobby. &#xD;
+&#xD;
+I have worked in Lead/Senior Development positions after graduating from University of Houston in 2002, and helped solve tons of problems, some especially bad ones. I have worked as the primary developer and architect for several SQL and .Net projects, started and ran a couple of software companies, sold one as well, and written software for many different industries.&#xD;
+&#xD;
+My specialty nowadays is C# based web applications, and still do plenty of hands on coding and love it.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2018-07-12T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Microsoft’s SSRS and most of the other popular Reporting Tools by big names like Telerik, Infragistics or DevExpress, are all geared for developers to hand code and design each report. &#xD;
+&#xD;
+However, if you want to add an end user, Do It Yourself, Ad Hoc Report Builder or Wizard, dotnet Report Builder is a utility created to solve this problem and a better option than these other tools. It allows developers to very easily add a modern and intuitive Report Building Wizard to an existing or new Web Application, where users can create different reports on their own. The solution comprises of three main components, two of them are open source and on github. So whether developers need this on their intranet for internal users, or need this in their SaaS for external users, it is a very powerful solution.</SessionAbstract>
+    <SpeakerFirstName>Razi Syed</SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage>Yunifire provides UI/UX Design for Website &amp; Mobile Apps as well as Application Security Testing.&#xD;
+&#xD;
+Yunifire also offers offshore consultants in all areas of Microsoft development and Quality Assurance resources for your assisted development and testing needs.&#xD;
+&#xD;
+Portfolio and client references available upon request. &#xD;
+&#xD;
+Call or email us today for a free consultation concerning your .NET application UI design, application security testing, or offshore staffing needs. Phone: 281-671-6630 Email: support@yunifire.com Address: 8300 FM 1960 Rd W, Suite 450 Houston, TX 77070</SponsorMessage>
+    <SponsorName>Yunifire</SponsorName>
+    <SponsorUrl>Information Technology Brokers</SponsorUrl>
+    <Title>dotnet Report Builder</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Tony  is a software architect with over 20 years of experience developing with Microsoft technologies. As the president of Champion DS and its lead software architect, he remains active in the latest trends and technologies, creating custom solutions on Microsoft platforms. His list of clients span across multiple industries and includes companies such as: Schlumberger, Microsoft, Boeing, MLB, and Chevron/Philips. Tony is an active participant in the community as a six year Microsoft MVP, international speaker, published author, and blogger.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2018-08-09T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Today's users want more from their apps. They want  a single experience that follows them no matter what device they are on. As a developer, providing this experience can be quite daunting. Microsoft's Project Rome enables developers to extend their apps' experiences across devices and platforms. In this session we will explore how Project Rome's remote system APIs can help you drive user engagement with your apps.</SessionAbstract>
+    <SpeakerFirstName>Tony Champion</SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage>OUR PHILOSOPHY&#xD;
+Genuent believes in straightforward principles and approaches. Our beliefs help us define our customer’s problems and create clear, effective solutions. We stay focused on the Information Technology space to ensure that our efforts are relevant to you and your mission.&#xD;
+A part of our core values come from learning about our client, asking questions, understanding the client needs and determining the best solution to exceed expectations. We take pride in having long-term client relationships, allowing our team to join the conversation and provide fresh views to achieve new goals.&#xD;
+In conjunction with working side by side with our clients, Genuent continues to seek knowledge and invest in developing our own staff and Consultants. As a team we value growing our efforts and streamlining our processes to provide effective solutions to our clients.&#xD;
+&#xD;
+OUR VISION&#xD;
+Genuent is a national expert in delivering Talent and resource solutions, producing a partnership between our Consultants and clients, which help them solve complex technology and business challenges</SponsorMessage>
+    <SponsorName>Genuent</SponsorName>
+    <SponsorUrl>Innovative Talent Solutions</SponsorUrl>
+    <Title>Building Cross Device Experiences with Project Rome</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Jason is a Microsoft and Xamarin MVP who runs PostDotNet Consulting, a one-man shop specializing in Xamarin development.  He lives in Spring with his wife and three kids.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2018-09-13T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Have you ever dreamed of going Office Space on your employer, walking away, and starting a new life as a freelancer?  Five years ago I did just that (well, sort of)!  Learn about what caused me to make the transition from employee to self-employed, and how I've managed to stay afloat for five years.  I'll share some lessons that I've learned the hard way, and we'll discuss the pros (many) and cons (a few) of a life of self-employment.</SessionAbstract>
+    <SpeakerFirstName>Jason Awbrey </SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage>Whitaker IT is a National IT staffing firm that specializes in providing project support, staff augmentation and direct-hire services for today's highest-demand IT markets , ERP (Oracle, SAP and Peoplesoft), business and custom applications including Java, .Net and Open Source Technologies, IT Security, Big Data, and Healthcare IT.&#xD;
+&#xD;
+In business since 1993, we offer three key areas of staffing: project support, staff augmentation and direct-hire services. With a specialized focus in IT and an average tenure of over 13 years in IT staffing, our recruitment team is qualified to meet all IT staffing needs.&#xD;
+&#xD;
+Industries served include, but are not limited to: oil &amp; gas, energy, manufacturing, technology, software, government, higher education, services, consulting, banking and finance.&#xD;
+&#xD;
+Job opportunities range in contract, contract-to-hire and direct-hire assignments for clients across the United States. Because our job opportunities move quickly, not all are posted. For a comprehensive list of current IT job openings, please call our recruitment team or visit our IT job portal at http://www.WhitakerIT.com.</SponsorMessage>
+    <SponsorName>Whitaker IT</SponsorName>
+    <SponsorUrl>National IT Staffing</SponsorUrl>
+    <Title>The Independent Developer - Lessons Learned from 5 Years of Self Employment</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Claudio is a Principal Consultant at Improving Houston. He has been developing software for 27+ years (FoxPro, .NET, Ruby on Rails). When not building software, consulting with clients, doing presentations, delivering training, or hanging out with his family, he can probably be found working on his music or riding his motorcycle. Check out his blog at www.lassala.net</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2018-10-11T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Testing cannot be an afterthought; it has to be an integral part of software development. Is it something that QA teams do? Or is it part of a developer’s duties? Do business analysts play any role in it? What is test automation? Unit test, Integration test, Test-Driven Development, Behavior-Driven Development… what do those mean?!&#xD;
+&#xD;
+This session addresses all of those questions, as we talk through the importance of tests, the collaboration among team members, the techniques, and practices around different kinds of automated testing.</SessionAbstract>
+    <SpeakerFirstName>Claudio Lassala </SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage/>
+    <SponsorName i:nil="true"/>
+    <SponsorUrl i:nil="true"/>
+    <Title>Testing in Agile: from Afterthought to an Integral Part</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>J is a Senior Architect for Hitachi Consulting based in Houston, TX and absolutely loves to write code and build cool, innovative solutions to hard problems. J has been involved with the Houston .NET User's Group (HDNUG), one of the oldest and largest .NET-focused user groups in the US and you can join him at HDNUG on the second Thursday of every month. He also loves to ride his Kawasaki Concours 14. But he won't code and ride at the same time. That would be bad.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2018-11-08T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>This session will go into the why's of dependency injection and then show you how to get started actually doing DI using the Unity Container. We'll talk about DI from an architectural perspective and why it's a good thing to do. Then we'll walk through how you build your applications and handle your dependencies using the Unity Container.</SessionAbstract>
+    <SpeakerFirstName>J Sawyer</SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage>capSpire, a global consulting and solutions company with a focus on energy and commodities, provides the unique combination of industry knowledge and business expertise required to deliver impactful business strategies and solutions. Trusted by some of the world’s leading companies, capSpire’s team of industry experts and senior advisors enables clients to effectively streamline business processes and attain maximum value from their supporting IT infrastructure.&#xD;
+&#xD;
+ Visit http://www.capSpire.com/careers for their current openings ! </SponsorMessage>
+    <SponsorName>capSpire</SponsorName>
+    <SponsorUrl>Global Consulting and Solutions </SponsorUrl>
+    <Title>Getting Started with Dependency Injection using Unity</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Mark has been developing operations-centric solutions, Machine Learning, Predictive Analytics, and Surveillance Systems. Mark’s experience includes addressing challenges in Operations Technology, Information Technology, and Knowledge Engineering. Recently he has been a contributing leader in public forums as an Applied System Engineer and Machine Learning Architect. Mark is a contributing author for energy industry and computer science magazines, and speaker at industry conferences. In his spare time, he is Professor of Computer Science at Lone Star College.&#xD;
+&#xD;
+Visit &lt;a href="https://www.linkedin.com/in/profreynolds/"&gt;Professor Reynolds&lt;/a&gt; on LinkedIn</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2019-01-10T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Azure Machine Learning is a cloud predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions. Getting started is easy. The first working prototype is an easy evening project. But Azure Machine Learning will grow to extremely complex projects. This session will demonstrate initial projects utilizing multiple data science principals.</SessionAbstract>
+    <SpeakerFirstName>Mark Reynolds</SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage/>
+    <SponsorName/>
+    <SponsorUrl i:nil="true"/>
+    <Title>Introduction to Azure Machine Learning</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Saint Valentine (Italian: San Valentino, Latin: Valentinus), officially Saint Valentine of Rome,[3] was a widely recognized 3rd-century Roman saint commemorated on February 14 and since the High Middle Ages is associated with a tradition of courtly love.&#xD;
+&#xD;
+Many of the current legends that characterize Saint Valentine were invented in the 14th century in England, notably by Geoffrey Chaucer and his circle, when the feast day of February 14 first became associated with romantic love.&#xD;
+&#xD;
+During the Middle Ages, it was believed that birds paired in mid-February. This was then associated with the romance of Valentine. Although these legends differ, Valentine’s Day is widely recognized as a day for romance and devotion</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2019-02-14T00:00:00</MeetingDate>
+    <MeetingLocation>ANY WHERE BUT HERE:&#xD;
+Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>How to avoid Arguments by Exception.&#xD;
+&#xD;
+try { meetup = new Houston(.net, "2/14/2019");}&#xD;
+catch { (ArgumentException ex) {&#xD;
+  Avoid(ArgumentException, doNotAttend, Spend( time( with( someOneSpecial))) );&#xD;
+}</SessionAbstract>
+    <SpeakerFirstName>Saint Valentine</SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage>Happy Valentine's Day..</SponsorMessage>
+    <SponsorName>Chocolate Lovers Anonymous, Strawberry Growers Association &amp; Bouquets R Us</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>ArgumentException handling</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Eric Huckabay is a Director for Improving, and has spent the last 20 years in software development, consulting, and in growing the people around him.  He believes that all the most interesting problems are hard ones.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2019-03-14T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>We accumulate baggage as part of the process of going through life; this is no less true in software development.  When should we hit reset?  When should we pay down our debts?  What can go wrong when we do?</SessionAbstract>
+    <SpeakerFirstName>Eric Huckabay</SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage>Passion for technology drives us. But it’s innovation that defines us. From design to development and support to management, Neudesic offers decades of experience, proven frameworks and a disciplined approach to quickly deliver reliable, quality solutions that help you go to market faster and get a leg up on your competition.&#xD;
+&#xD;
+·       Leverage the Cloud to reduce costs and increase flexibility&#xD;
+·       Process and analyze Big Data faster to improve decision making&#xD;
+·       Expand market reach with enterprise-ready mobile solutions&#xD;
+·       Integrate systems and applications to enhance productivity&#xD;
+·       Monetize APIs and other digital assets to boost revenue&#xD;
+&#xD;
+Our partnerships are firmly grounded in the belief that collaboration is vital to the successful implementation of any technology solution. That’s how Neudesic became the trusted technology partner to Fortune 500 companies like Amazon, Microsoft, GE, Johnson &amp; Johnson, UPS, Xerox and others – always working together to achieve a common goal. By working in close partnership with our alliances — blending our expertise with their tools and technology — Neudesic is able to deliver the best possible solution to every business challenge.</SponsorMessage>
+    <SponsorName>Neudesic</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>Do you have technical debt?</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Aaron is the founder and CEO of Petabridge, and the co-founder of the Akka.NET open-source project. Prior to Petabridge, Aaron founded MarkedUp Analytics, a real-time in-app marketing and analytics service used by 1000+ developers. Prior to that he worked at Microsoft as a Startup Developer Evangelist.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2019-04-11T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Developers are living in exciting, but more demanding times - we’re expected to create applications and services that can deliver better value faster, at higher volumes, with less downtime. And in order to meet these demands we must learn new technologies and programming styles. Enter the actor model and Akka.NET.&#xD;
+&#xD;
+In this talk you’ll learn the fundamentals of Akka.NET and discover how you can use the power of the actor model, location transparency, clustering, and other Akka.NET concepts to build powerful, highly available systems without having to write awful boilerplate code. You’ll never look at .NET the same way again afterwards. </SessionAbstract>
+    <SpeakerFirstName>Aaron Stannard</SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage>TEALS (Technology Education and Literacy in Schools) helps high schools throughout the US build and grow sustainable computer science programs. In its proven program, TEALS pairs trained computer science professionals from across the technology industry with classroom teachers to team-teach computer science. Industry volunteers and partner teachers create a ripple effect, impacting the students they teach, and the many students who will study CS in the future. Students want to learn computer science yet most high schools are unable to offer rigorous CS courses. This is where Tech professionals come in! Volunteers with a strong background in computer science and programming form the backbone of TEALS. They volunteer their time in high school classrooms to help close the opportunity gap for thousands of students https://www.tealsk12.org/volunteers/. Consider volunteering with TEALS in the Houston area for the upcoming 2018-2019 school year! For more information reach out to our Houston Regional Manager, Tonya Davis, at tonya@tealsk12.org.</SponsorMessage>
+    <SponsorName>TEALS</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>Akka.NET and the Future of Distributed Application Development in .NET</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Born and raised in the Greater Houston Area, Garo has been writing software at least 15 years.  He was *the* Software Whisperer for Baker Hughes, but, more recently, he is a Principal Consultant (and Software Whisperer) at Headspring, making silky smooth software everywhere he goes.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2019-05-09T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>The Twelve Factor App (https://12factor.net/) is an informed set of practices to get your software cloud-ready.  We'll focus on how .NET Core can quickly fulfill these strategies and demonstrate how to combine the built-in framework features plus a set of "free as in speeches about beer" components to get your software working less flawfully.</SessionAbstract>
+    <SpeakerFirstName>Garabed (Garo) Yeriazarian</SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage>Headspring is a custom software development company with roots in Austin, TX and partnerships across the nation.  We’re driven by a set of core values that guide all of our decisions—from who we work for to the people we work with. Oh, and we’re hiring! So if this sounds like an environment you’d thrive in, check out the available positions: https://headspring.com/about/careers/ </SponsorMessage>
+    <SponsorName>Headspring</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>The Twelve Factor App - Get Your Software Cloud Ready</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Joseph earned his Master of Science in Information Technology, with a focus in Software Architecture from Capella University in 2009.&#xD;
+&#xD;
+With a Bachelor in Psychology, a Master’s in IT, and graduate work in Technical Communications, Joe offers a unique variety of C# and app development expertise. He is an organizer and speaker at Houston area .Net user groups, blogs here at InfoCraft, and is a member of the Lonestar College IT Advisory Board. When not working in the office or at home, he can generally be found at St Jonah Orthodox Church, or rolling dice with his various gaming friends.&#xD;
+&#xD;
+In January of 2013, Joseph was honored to receive the Microsoft C# MVP award.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2019-06-13T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Are you a developer who recently started using Git in VSTS? Maybe you’ve been using it for a while, but your team needs some help with branching and merging? Or maybe you just want to see some of the tools out there that make Git easier to use?&#xD;
+&#xD;
+This is the class for you! We’re going to focus on what most of us do 75% of the time in Git, and how to use that to make your life easier.</SessionAbstract>
+    <SpeakerFirstName>Joseph Reynolds</SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage>Clearpoint matches people who have bright ideas with companies that thrive on them.  We have been a preferred staffing partner for Houston's top employers since we started in 1999.&#xD;
+&#xD;
+Companies trust us to deliver the technology, creative, and office professional staff needed on a contract (temp), contract-to-hire, and direct-hire basis.</SponsorMessage>
+    <SponsorName>ClearPoint</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>Git for NORMAL Developers</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Assad is a Principal Software Consultant for Improving. He has spent the last 14 years in Software Development, creating Full-Stack Enterprise level software from start to finish.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2019-07-11T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Apart from catching bugs early, we can use unit testing to make sure we have a better code. This talk would demonstrates how Unit tests could be used as a tool to make code better. This would focus on the “Refactoring” part of Test Driven Development (TDD) and ways to write better tests itself.</SessionAbstract>
+    <SpeakerFirstName>Assad Siddiqui </SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage/>
+    <SponsorName i:nil="true"/>
+    <SponsorUrl i:nil="true"/>
+    <Title>Refactoring to Good Design using Unit Tests</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Derar Deek is a senior software engineer at the American Bureau of Shipping, with 5 years of experience in the .Net Stack and over 10 years in web development. He built projects for firms like  Berkeley Research Group  and Dow Chemical in the past. </AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2019-08-08T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Blazor lets you build interactive web UIs using C# instead of JavaScript. Blazor apps are composed of reusable web UI components implemented using C#, HTML, and CSS. Both client and server code is written in C#, allowing you to share code and libraries, using WebAssembly on the client. Because it's real .NET running on WebAssembly, you can re-use code and libraries from server-side parts of your application.&#xD;
+&#xD;
+You can even run the client side code on the Server using Razor Web Components, the SSR version of Blazor</SessionAbstract>
+    <SpeakerFirstName>Derar Deek</SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage>FullStack Houston provides classes for both beginner and advance software developers in the latest and greatest tools like React, Angular, Node, and .Net Core (with Blazor) &#xD;
+    </SponsorMessage>
+    <SponsorName>FullStack</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>Live Coding: Into Blazor and Razor Web Components</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Anish Patel is a consultant with Improving. He has worked on energy trading applications in the past, and his recent work involves helping to stabilize a product for an e-commerce client. His passion for making processes more efficient has resulted in exploring and tinkering with tools to allow such improvements to become a reality.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2019-09-12T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Are you tired of spending countless hours on repetitive and manual UI regression testing? How many times have we broken some basic existing functionality after implementing a new feature, which we completely overlooked during testing? In this session, we will explore a way to automate some of this repetitive UI testing using Selenium, and in a manner that is easily readable using SpecFlow, in .NET Core, with the hopes of making our testing lives easier and more effective.</SessionAbstract>
+    <SpeakerFirstName>Anish Patel</SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage>Whitaker IT specializes in recruitment of mid to senior level IT professionals nationwide for even the most challenging requirements for over 25 years.&#xD;
+&#xD;
+Our staff has the experience and knowledge to properly identify, evaluate and screen IT professionals in a broad array of skill sets including but not limited to: IT Security, Cloud Computing, Business &amp; Custom Applications Development, ERP Systems &amp; Big Data.</SponsorMessage>
+    <SponsorName>Whitaker IT</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>UI Automation Testing with Selenium and SpecFlow in .NET Core</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>I'm passionate about genuine interpersonal interactions, entrepreneurship, and solving complex problems to get results.&#xD;
+&#xD;
+I have a career record of being loyal, artfully and methodically crafting business and software solutions, leading teams to a goal successfully, and continually, relentlessly seeking improvement.&#xD;
+&#xD;
+Practice in the realms of application architecture, enterprise architecture, Agile methods, business development, and people leadership have made me who I am. </AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2019-10-10T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Curious about how to leverage Docker containers in your day-to-day development? Maybe you know the mechanics but want to explore how containers help us start new development faster and deploy code better. Once we have many containers interacting with each other, how do we orchestrate this new complexity with Swarm or Kubernetes, and what options does Azure offer? Get the answers to these questions and more at our Docker And DevOps talk!</SessionAbstract>
+    <SpeakerFirstName>Aaron Murrell </SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage>Arcurve is a full-service, independent software services company. Since 2006, we’ve completed over 600 projects by focusing on our clients’ business goals, giving honest advice, providing the right technical solutions and delivering superior software. </SponsorMessage>
+    <SponsorName>Arcurve</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>Docker And DevOps</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Brandon is a career software engineer working primarily with Microsoft solutions with over 15 years of professional experience. He has provided development and architecture technology solutions in the finance, state government, energy, and aerospace industries. His functional expertise includes: full-stack development, distributed architecture, real-time communication, DevOps and agile transformation, &amp; mentoring.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2019-11-14T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>Spending too much time building and maintaining your data analytics and data warehousing applications, but don’t want to invest in a pricey commercial solution with licensing entanglements? Azure Data Factory is an alternative to writing something completely custom that plugs into lots of services and can be tailored where needed.&#xD;
+&#xD;
+In this talk, you’ll learn how and why to leverage Azure Data Factory as the stepping stone for your organization's ETL, ELT, and big data solutions. We’ll explore the distinguishing data and compute platforms that you’ll be able to use and also examine the cost of Data Factory, as well as the cost of complexity and maintenance of custom solutions. You’ll even get to see a sample pipeline built in .NET and look at the Azure UI Designer options for continuous delivery.</SessionAbstract>
+    <SpeakerFirstName>Brandon Brockhoeft</SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage>Headspring is a custom software development company that enables businesses to move faster, work better, and stand out. Our teams are made up of proven leaders and collaborators who offer full stack expertise and guidance at every step. We’re driven by a set of core values that guides all of our decisions, from who we work for to the people we work with. </SponsorMessage>
+    <SponsorName>Headspring</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>CRUD, Another ETL Solution: Azure Data Factory</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Based in Houston, J Sawyer is a Principal Consultant with Catapult Systems and has over 25 years of experience developing on the Microsoft platform. He enjoys building flexible and solid solutions for a wide range of customers. Outside of development, he’s also a hardware nerd, motorcyclist and father of two. </AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2020-01-09T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>In this session, we’ll start with talking about dependency injection – what it is and why you’d want to use it for your projects. From there, we’ll quickly move into using DI in ASP.NET Core projects, looking at how ASP.NET Core itself leverages dependency injection for core functionality. Beyond that, we’ll dig into how you can (and should) use it in your applications to make them flexible and highly testable, including a couple of tips and tricks. </SessionAbstract>
+    <SpeakerFirstName>J Sawyer</SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage>Pariveda Solutions, Inc. is an employee-owned, strategic services and information technology consulting company that grows and deploys talented people to solve the strategic and technical challenges of its clients. </SponsorMessage>
+    <SponsorName> Pariveda Solutions</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>Handling Dependencies in ASP.NET Core</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Born and raised in the Greater Houston Area, Garo has been writing software at least 15 years.  He was *the* Software Whisperer for Baker Hughes, but, more recently, he is a Principal Consultant (and Software Whisperer) at Headspring, making silky smooth software everywhere he goes.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2020-02-13T00:00:00</MeetingDate>
+    <MeetingLocation>Improving Houston Office &#xD;
+10111 Richmond Ave, Suite 100&#xD;
+Houston, TX 77042</MeetingLocation>
+    <SessionAbstract>You’ve drunk the sugary fruity beverage and have begun your journey into cloud-native serverless architectures. This new landscape is full of new and exciting languages like Go, Rust, and JavaScript (ok, not all “new” and “exciting”), which are designed from the ground up to make serverless computing easy as Python. However, many organizations have made heavy investments in learning C# and building code that runs on .NET. Fresh off the Internet, .NET Core 3.1 has the capabilities to enable your teams to apply their highly marketable C# skillset and apply it to quickly and effectively build serverless applications on top of AWS Lambda and Azure Functions. In this talk, we’ll walk through porting an existing application as vertically sliced AWS Lambda functions, leveraging the new features in .NET Core 3.1 and the AWS SDK. This talk is for those who are interested in adapting to the modern demands of cloud-based applications, but could use some assurances that everything will work out in the end. (Spoiler alert: you win.)</SessionAbstract>
+    <SpeakerFirstName>Garo Yeriazarian</SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage>TEALS helps high schools build and grow sustainable computer science (CS) programs. We pair volunteer CS professionals across the US with classroom teachers looking to make a lasting impact in their students’ lives. TEALS volunteers help shape students’ futures and career opportunities by providing them with computational knowledge and skills they wouldn’t otherwise have access to.  </SponsorMessage>
+    <SponsorName>TEALS</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>Vertically Sliced .NET Serverless Lambdas: The Made-for-TV Movie</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Tony Cardella is a husband, a father, and a Principal Consultant with Improving. He has over 19 years experience of software development across a number of verticals including oil &amp; gas and energy &amp; utilities. His work has spanned multiple applications built for the web, desktop, mobile, and the cloud.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2020-03-12T00:00:00</MeetingDate>
+    <MeetingLocation>Neudesic Houston Office (NOTE NEW LOCATION THIS MONTH!)&#xD;
+842 West Sam Houston Pkwy N, Suite 560&#xD;
+Houston, TX 77024&#xD;
+(by Seasons 52 in CityCenter, Parking is free if you go to the 2nd floor of the garage)</MeetingLocation>
+    <SessionAbstract>Interested in writing C# and running it on the Raspberry Pi? Come join us as we discuss how to go about bridging the gap between one of the leading programming languages and the leading IOT single-board computers.</SessionAbstract>
+    <SpeakerFirstName>Tony Cardella</SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage>We are your trusted technology partner in business innovation - delivering technology, strategies and solutions that drive business growth. We are innovators, business advisors and passionate technologists collaborating in unison to ideate, create and streamline business workflows that enable sustained value for your organization</SponsorMessage>
+    <SponsorName>Neudesic</SponsorName>
+    <SponsorUrl i:nil="true"/>
+    <Title>C# on the Raspberry Pi</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Jeremy Clark makes developers better. By drawing on over 15 years of experience in application development, he helps developers take a step up in their skill set with a focus on making complex topics approachable regardless of skill level. He is a Microsoft MVP for .NET, and he has authored seven courses for Pluralsight, including "C# Interfaces", a course aimed at giving developers a clear understanding of abstraction. He loves speaking and has delivered over 300 technical presentations in the last 10 years in the United States and Europe. Jeremy lives in northern Washington with his lovely wife, 3 cats, 2 dogs, and a banjo.&#xD;
+    </AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2020-06-18T00:00:00</MeetingDate>
+    <MeetingLocation>Online: https://www.meetup.com/Houston-dotNET-User-Group/events/271278821/</MeetingLocation>
+    <SessionAbstract>There's a lot of confusion about async/await, Task/TPL, and asynchronous and parallel programming in general. So let's start with the basics and look at how we can consume asynchronous methods using Task and then see how the "await" operator can makes things easier for us. Along the way, we’ll look at continuations, cancellation, and exception handling.</SessionAbstract>
+    <SpeakerFirstName>Jeremy Clark</SpeakerFirstName>
+    <SpeakerLastName>@jeremybytes</SpeakerLastName>
+    <SponsorMessage/>
+    <SponsorName i:nil="true"/>
+    <SponsorUrl i:nil="true"/>
+    <Title>I'll Get Back to You: Task, Await, and Asynchronous Methods in C#</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>Murali Venugopalan is seasoned full stack developer with vast experience in Front End Technologies, Web APIs and relational databases focused on Microsoft Stack. Murali work as Lead Software Developer with experience in Microservice architecture, containerization using Dockers and automated deployments using Azure Devops pipelines.&#xD;
+&#xD;
+Mukesh Dhannawat is Software Engineering Leader with 18+ years of progressive experience in application development and product management with focus on building and developing high performing teams. He has lead multiple transformations of teams to Agile Scrum and DevOps frameworks.</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2020-07-16T00:00:00</MeetingDate>
+    <MeetingLocation>Online</MeetingLocation>
+    <SessionAbstract>Microservices are the future of modern application development, but nearly all of the successful software originate from the classic monolith. The ones who embark on this journey to break a monolith have aspirations such as decoupled deploys, scalability, resilience, development velocity, and more. They want to grow their number of teams while delivering value in parallel, faster and independently of each other. Thus, adopting to the microservices pattern is a prerequisite to agile and DevOps transformation. The speakers had an opportunity to travel on similar journey and this talk is summary of their learnings for decomposing monolithic applications to Cloud Native applications.</SessionAbstract>
+    <SpeakerFirstName>Murali Venugopalan</SpeakerFirstName>
+    <SpeakerLastName>Mukesh Dhannawat</SpeakerLastName>
+    <SponsorMessage/>
+    <SponsorName i:nil="true"/>
+    <SponsorUrl i:nil="true"/>
+    <Title>Breaking the Monolith - Byte by Byte</Title>
+  </MeetingAnnouncement>
+
+  <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
+    xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <AboutSpeaker>I'm a full stack software developer who works closely with Q/A.  When I'm not writing code,  I'm implementing machine learning algorithms, stuffing my face or fending off my cats 🙂</AboutSpeaker>
+    <CommentsText i:nil="true"/>
+    <CommentsTitle i:nil="true"/>
+    <IncludeSpecialComments>false</IncludeSpecialComments>
+    <MeetingDate>2020-08-13T00:00:00</MeetingDate>
+    <MeetingLocation>Online Webex</MeetingLocation>
+    <SessionAbstract>I will introduce End to End Testing, why you'd want to use it and  some pros and cons.  For those unfamiliar or uncomfortable with automated testing, I may pause to cover the basics, as we'll build on that in the talk.  I'll then go over Cypress.IO, covering installation and use.  I'll then walk through Cypress.IO's examples and focus on the more illustrative ones, taking time to mention some best practices and gotchas.</SessionAbstract>
+    <SpeakerFirstName>Ahmed Hammad</SpeakerFirstName>
+    <SpeakerLastName i:nil="true"/>
+    <SponsorMessage/>
+    <SponsorName i:nil="true"/>
+    <SponsorUrl i:nil="true"/>
+    <Title>End to End Testing with Cypress.IO</Title>
+  </MeetingAnnouncement>
+
+</LegacyFiles>

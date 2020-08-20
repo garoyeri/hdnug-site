@@ -97,7 +97,7 @@ export const pageQuery = graphql`
           presenters {
             name
             twitter
-            web
+            website
           }
         }
       }

@@ -33,6 +33,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String!
       presenters: [UgPerson!]! @link
       date: Date! @dateformat
+      time: String!
       image: File @fileByRelativePath
       abstract: String!
       content: String!
