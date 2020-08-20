@@ -35,8 +35,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       date: Date! @dateformat
       time: String!
       image: File @fileByRelativePath
-      abstract: String!
-      content: String!
+      excerpt: String!
       slug: String!
       hidden: Boolean
     }
