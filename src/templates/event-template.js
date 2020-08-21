@@ -21,25 +21,23 @@ const EventTemplate = ({ data, pageContext }) => {
           {ugEvent.date} {ugEvent.time}
         </p>
         <ul>
-          {ugEvent.presenters.map(p => (
-            <li>
-              {p.name}{" "}
-              {p.twitter && (
-                <a
-                  rel="nofollow"
-                  target="_self"
-                  href={`https://twitter.com/${p.twitter}`}
-                >
-                  @{p.twitter}
-                </a>
-              )}{" "}
-              {p.web && (
-                <a rel="nofollow" target="_self" href={p.web}>
-                  {p.web}
-                </a>
-              )}
-            </li>
-          ))}
+          <li>
+            {ugEvent.presenter.name}{" "}
+            {ugEvent.presenter.twitter && (
+              <a
+                rel="nofollow"
+                target="_self"
+                href={`https://twitter.com/${ugEvent.presenter.twitter}`}
+              >
+                @{ugEvent.presenter.twitter}
+              </a>
+            )}{" "}
+            {ugEvent.presenter.website && (
+              <a rel="nofollow" target="_self" href={ugEvent.presenter.website}>
+                {ugEvent.presenter.website}
+              </a>
+            )}
+          </li>
         </ul>
       </Header>
       <Container className="text-left">
@@ -79,7 +77,7 @@ export const pageQuery = graphql`
       date(formatString: "MMMM DD, YYYY")
       time
       title
-      presenters {
+      presenter {
         name
         twitter
         website

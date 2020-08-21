@@ -182,6 +182,11 @@ exports.createPages = async ({
               excerpt
               title
               hidden
+              presenter {
+                name
+                email
+                website
+              }
             }
             html
           }

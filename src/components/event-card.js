@@ -3,15 +3,14 @@ import { Card } from "react-bootstrap"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-const EventCard = ({ title, presenters, text, target, date, time }) => {
-  const presenterList = presenters.map(s => s.name).join(", ")
+const EventCard = ({ title, presenter, text, target, date, time }) => {
   return (
     <Card>
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <div>
           <p>
-            <i>Presented by: {presenterList}</i>
+            <i>Presented by: {presenter.name}</i>
           </p>
           <p>
             {date} {time}
@@ -34,7 +33,7 @@ EventCard.defaultProps = {
   target: "",
   date: "",
   time: "",
-  presenters: [],
+  presenter: {},
 }
 
 EventCard.propTypes = {
@@ -43,13 +42,11 @@ EventCard.propTypes = {
   target: PropTypes.string,
   date: PropTypes.string,
   time: PropTypes.string,
-  presenters: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string,
-      twitter: PropTypes.string,
-      web: PropTypes.string,
-    })
-  ),
+  presenter: PropTypes.shape({
+    name: PropTypes.string,
+    twitter: PropTypes.string,
+    website: PropTypes.string,
+  }),
 }
 
 export default EventCard

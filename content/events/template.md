@@ -5,9 +5,10 @@ time: "6:30 PM Central Time"
 excerpt: |
   Add a multiline excerpt here for the preview of the talk. If you don't provide one, a summay will be generated automatically.
 hidden: true
-speaker:
+presenter:
   name: Speaker Name
   email: speaker@company.com
+  website: speaker.com
 ---
 
 ## Abstract
