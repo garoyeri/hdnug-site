@@ -19,16 +19,16 @@ exports.createSchemaCustomization = ({ actions }) => {
     """
     UgPerson: a presenter or officer referenced in a page
     """
-    type UgPerson implements Node @infer {
+    type UgPerson {
       name: String!
-      email: String!
+      email: String
       website: String
       twitter: String
       github: String
       linkedin: String
       image: File @fileByRelativePath
       bio: String
-      slug: String!
+      slug: String
       hidden: Boolean
     }
   
@@ -44,20 +44,21 @@ exports.createSchemaCustomization = ({ actions }) => {
       content: String
       slug: String!
       website: String
-      presenter: UgPerson @link
+      presenter: UgPerson
+      sponsor: UgSponsor
       hidden: Boolean
     }
 
     """
     UgSponsor: sponsor for events or generally
     """
-    type UgSponsor implements Node @infer {
-      name: String!
-      website: String!
+    type UgSponsor {
+      name: String
+      website: String
       email: String
       image: File @fileByRelativePath
       summary: String
-      slug: String!
+      slug: String
       hidden: Boolean
     }
   `
@@ -111,7 +112,7 @@ exports.createPages = async ({
       date: extractDay(rawEvent.MeetingDate),
       title: rawEvent.Title,
       excerpt: rawEvent.SessionAbstract,
-      speaker: {
+      presenter: {
         name: `${rawEvent.SpeakerFirstName || ""} ${
           rawEvent.SpeakerLastName || ""
         }`.trim(),
@@ -155,11 +156,14 @@ exports.createPages = async ({
     return {
       source: "meetup",
       meetup_id: n.node.id,
-      date: extractDay(n.node.local_date),
+      date: n.node.local_date,
       time: n.node.local_time,
       title: n.node.name,
       website: n.node.link,
+      content: n.node.description,
       image: n.node.featured_photo && n.node.featured_photo.highres_link,
+      presenter: {},
+      sponsor: {},
     }
   })
 
@@ -178,6 +182,7 @@ exports.createPages = async ({
             excerpt
             frontmatter {
               date
+              time
               email
               excerpt
               title
@@ -185,6 +190,10 @@ exports.createPages = async ({
               presenter {
                 name
                 email
+                website
+              }
+              sponsor {
+                name
                 website
               }
             }
@@ -212,20 +221,21 @@ exports.createPages = async ({
         title: n.node.frontmatter.title,
         excerpt: n.node.frontmatter.excerpt || n.node.excerpt,
         content: n.node.html,
-        presenter: n.node.presenter,
+        presenter: n.node.frontmatter.presenter || {},
+        sponsor: n.node.frontmatter.sponsor || {},
         hidden: n.node.hidden || false,
       }
     })
 
   let ugEvents = {}
   xmlEvents.map(x => {
-    ugEvents[x.date] = x
+    ugEvents[x.date] = merge(null, x)
   })
   meetupEvents.map(x => {
-    ugEvents[x.date] = { ...(ugEvents[x.date] || {}), ...x }
+    ugEvents[x.date] = merge(ugEvents[x.date], x)
   })
   markdownEvents.map(x => {
-    ugEvents[x.date] = { ...(ugEvents[x.date] || {}), ...x }
+    ugEvents[x.date] = merge(ugEvents[x.date], x)
   })
 
   // create nodes from all the events
@@ -281,10 +291,10 @@ exports.createPages = async ({
       path: node.slug,
       component: eventTemplate,
       context: {
-        // additional data can be passed via context
         slug: node.slug,
-        next: next ? { slug: next.slug, title: next.title } : null,
-        previous: previous
+        // we're swapping these around because we sort by descending order
+        previous: next ? { slug: next.slug, title: next.title } : null,
+        next: previous
           ? { slug: previous.slug, title: previous.title }
           : null,
       },
@@ -293,7 +303,28 @@ exports.createPages = async ({
 }
 
 function extractDay(meetingDate) {
-  return moment(meetingDate).format("YYYY-MM-DD")
+  return moment.utc(meetingDate).format("YYYY-MM-DD")
+}
+
+function merge(prev, next) {
+  if (!prev) {
+    return next
+  } else if (!next) {
+    return prev
+  }
+
+  return {
+    ...prev,
+    ...next,
+    presenter: {
+      ...(prev.presenter || {}),
+      ...(next.presenter || {}),
+    },
+    sponsor: {
+      ...(prev.sponsor || {}),
+      ...(next.sponsor || {}),
+    }
+  }
 }
 
 function generatePerson(node) {

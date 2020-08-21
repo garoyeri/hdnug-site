@@ -51,7 +51,7 @@ const IndexPage = ({ data }) => (
                     target={node.slug}
                     date={node.date}
                     time={node.time}
-                    presenters={[node.presenter]}
+                    presenter={node.presenter}
                   />
                 )
               })}

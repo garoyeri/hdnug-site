@@ -9,6 +9,9 @@ presenter:
   name: Speaker Name
   email: speaker@company.com
   website: speaker.com
+sponsor:
+  name: Sponsor Name
+  website: sponsor.com
 ---
 
 ## Abstract

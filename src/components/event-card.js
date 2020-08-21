@@ -10,7 +10,7 @@ const EventCard = ({ title, presenter, text, target, date, time }) => {
         <Card.Title>{title}</Card.Title>
         <div>
           <p>
-            <i>Presented by: {presenter.name}</i>
+            <i>Presented by: {presenter?.name}</i>
           </p>
           <p>
             {date} {time}

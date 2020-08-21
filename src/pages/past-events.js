@@ -33,7 +33,6 @@ const PastEventsPage = ({ data }) => {
                 <tr>
                   <th>Date</th>
                   <th>Title</th>
-                  <th>Summary</th>
                 </tr>
               </thead>
               <tbody>
@@ -49,12 +48,9 @@ const PastEventsPage = ({ data }) => {
                           {node.title}
                         </Link>
                         <dl>
-                        {node.presenters.map(item => (
-                          <dd>{item.name}</dd>
-                        ))}
+                          <dd>{node.presenter.name}</dd>
                         </dl>
                       </td>
-                      <td>{node.excerpt}</td>
                     </tr>
                   )
                 })}
@@ -78,7 +74,7 @@ export const pageQuery = graphql`
       edges {
         node {
           slug
-          date(formatString: "ddd, MMM D")
+          date(formatString: "ddd, MMM D, YYYY")
           title
           time
           excerpt

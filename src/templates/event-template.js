@@ -45,7 +45,7 @@ const EventTemplate = ({ data, pageContext }) => {
           <Col>
             <div
               className="text-left"
-              dangerouslySetInnerHTML={{ __html: ugEvent.childMarkdownRemark.html }}
+              dangerouslySetInnerHTML={{ __html: ugEvent.content || ugEvent.excerpt }}
             />
           </Col>
         </Row>
@@ -77,9 +77,15 @@ export const pageQuery = graphql`
       date(formatString: "MMMM DD, YYYY")
       time
       title
+      excerpt
+      content
       presenter {
         name
         twitter
+        website
+      }
+      sponsor {
+        name
         website
       }
     }
