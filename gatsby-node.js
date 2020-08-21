@@ -5,6 +5,8 @@
  */
 
 const { createFilePath } = require("gatsby-source-filesystem")
+const moment = require("moment")
+const slugify = require("slugify")
 
 const peopleSource = "people",
   sponsorsSource = "sponsors",
@@ -35,7 +37,6 @@ exports.createSchemaCustomization = ({ actions }) => {
     """
     type UgEvent implements Node @infer {
       title: String!
-      presenters: [UgPerson!]! @link
       date: Date! @dateformat
       time: String
       image: File @fileByRelativePath
@@ -43,6 +44,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       content: String
       slug: String!
       website: String
+      presenter: UgPerson @link
       hidden: Boolean
     }
 
@@ -63,74 +65,14 @@ exports.createSchemaCustomization = ({ actions }) => {
   createTypes(typeDefs)
 }
 
-exports.onCreateNode = ({
-  node,
+exports.createPages = async ({
   actions,
-  getNode,
+  graphql,
+  reporter,
   createNodeId,
   createContentDigest,
-  reporter,
 }) => {
-  const { createNode, createNodeField } = actions
-
-  if (node.internal.type === `MarkdownRemark`) {
-    // Get the parent node
-    const parent = getNode(node.parent)
-
-    reporter.info(`encountered: ${parent.sourceInstanceName}`)
-
-    const slug = createFilePath({ node, getNode, basePath: `content` })
-    const slugUrl = `/${parent.sourceInstanceName}${slug}`
-
-    switch (parent.sourceInstanceName) {
-      case peopleSource:
-        const person = generatePerson(node)
-        createNode({
-          ...person,
-          id: createNodeId(`person-${person.name}${person.email}`),
-          slug: slugUrl,
-          // parent: node.id,
-          internal: {
-            type: `UgPerson`,
-            contentDigest: createContentDigest(person),
-          },
-          children: [node.id],
-        })
-        break
-      case sponsorsSource:
-        const sponsor = generateSponsor(node)
-        createNode({
-          ...sponsor,
-          id: createNodeId(`sponsor-${sponsor.name}${sponsor.website}`),
-          slug: slugUrl,
-          // parent: node.id,
-          internal: {
-            type: `UgSponsor`,
-            contentDigest: createContentDigest(sponsor),
-          },
-          children: [node.id],
-        })
-        break
-      case eventsSource:
-        const event = generateEvent(node)
-        createNode({
-          ...event,
-          id: createNodeId(`event-${event.title}${event.date}`),
-          slug: slugUrl,
-          // parent: node.id,
-          internal: {
-            type: `UgEvent`,
-            contentDigest: createContentDigest(event),
-          },
-          children: [node.id],
-        })
-        break
-    }
-  }
-}
-
-exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage, createNode, createNodeId } = actions
+  const { createPage, createNode } = actions
 
   // layer XML, Meetup, and Markdown to be Events
   const xmlEventsSource = await graphql(`
@@ -158,18 +100,21 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const xmlEvents = xmlEventsSource.data.allHdnugXml.edges.map(n => {
     const rawEvent = {
       id: n.node.id,
-      ...n.node.xmlChildren.map(e => {
-        return { [e.name]: e.content }
-      }),
     }
+    n.node.xmlChildren.map(e => {
+      rawEvent[e.name] = e.content
+    })
 
     return {
+      source: "xml",
       xml_id: rawEvent.id,
-      date: rawEvent.MeetingDate,
+      date: extractDay(rawEvent.MeetingDate),
       title: rawEvent.Title,
       excerpt: rawEvent.SessionAbstract,
       speaker: {
-        name: `${rawEvent.SpeakerFirstName} ${rawEvent.SpeakerLastName}`,
+        name: `${rawEvent.SpeakerFirstName || ""} ${
+          rawEvent.SpeakerLastName || ""
+        }`.trim(),
         bio: rawEvent.AboutSpeaker,
       },
       sponsor: {
@@ -208,8 +153,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
   const meetupEvents = meetupEventsSource.data.allMeetupEvent.edges.map(n => {
     return {
+      source: "meetup",
       meetup_id: n.node.id,
-      date: n.node.local_date,
+      date: extractDay(n.node.local_date),
       time: n.node.local_time,
       title: n.node.name,
       website: n.node.link,
@@ -234,14 +180,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               date
               email
               excerpt
-              presenters {
-                name
-                email
-                twitter
-                website
-                github
-                linkedin
-              }
               title
               hidden
             }
@@ -262,15 +200,48 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     .filter(n => n.node.parent.sourceInstanceName === eventsSource)
     .map(n => {
       return {
+        source: "markdown",
         markdown_id: n.node.id,
-        date: n.node.frontmatter.date,
+        date: extractDay(n.node.frontmatter.date),
         time: n.node.frontmatter.time,
         title: n.node.frontmatter.title,
         excerpt: n.node.frontmatter.excerpt || n.node.excerpt,
         content: n.node.html,
-        presenters: n.node.presenters,
+        presenter: n.node.presenter,
+        hidden: n.node.hidden || false,
       }
     })
+
+  let ugEvents = {}
+  xmlEvents.map(x => {
+    ugEvents[x.date] = x
+  })
+  meetupEvents.map(x => {
+    ugEvents[x.date] = { ...(ugEvents[x.date] || {}), ...x }
+  })
+  markdownEvents.map(x => {
+    ugEvents[x.date] = { ...(ugEvents[x.date] || {}), ...x }
+  })
+
+  // create nodes from all the events
+  for (const [key, value] of Object.entries(ugEvents)) {
+    if (!value.title) {
+      reporter.info(`title was undefined: ${JSON.stringify(value)}`)
+      continue
+    }
+
+    createNode({
+      ...value,
+      id: createNodeId(`event-${value.date}${value.title}`),
+      slug:
+        `/events/` +
+        slugify(`${value.date} ${value.title}`, { lower: true, strict: true }),
+      internal: {
+        type: `UgEvent`,
+        contentDigest: createContentDigest(value),
+      },
+    })
+  }
 
   const eventTemplate = require.resolve(`./src/templates/event-template.js`)
   const events = await graphql(`
@@ -314,6 +285,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+}
+
+function extractDay(meetingDate) {
+  return moment(meetingDate).format("YYYY-MM-DD")
 }
 
 function generatePerson(node) {

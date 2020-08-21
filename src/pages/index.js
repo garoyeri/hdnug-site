@@ -51,7 +51,7 @@ const IndexPage = ({ data }) => (
                     target={node.slug}
                     date={node.date}
                     time={node.time}
-                    presenters={node.presenters}
+                    presenters={[node.presenter]}
                   />
                 )
               })}
@@ -94,7 +94,7 @@ export const pageQuery = graphql`
           title
           excerpt
           time
-          presenters {
+          presenter {
             name
             twitter
             website

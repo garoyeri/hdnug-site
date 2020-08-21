@@ -82,7 +82,7 @@ export const pageQuery = graphql`
           title
           time
           excerpt
-          presenters {
+          presenter {
             name
             twitter
             website
