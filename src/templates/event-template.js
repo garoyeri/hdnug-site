@@ -1,10 +1,9 @@
 import React from "react"
-import { Row, Col, Container } from "react-bootstrap"
+import { Row, Col, Container, Jumbotron } from "react-bootstrap"
 import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Header from "../components/header"
 
 const EventTemplate = ({ data, pageContext }) => {
   const { ugEvent } = data
@@ -16,30 +15,47 @@ const EventTemplate = ({ data, pageContext }) => {
         title={ugEvent.title || ugEvent.slug}
         keywords={[`gatsby`, `react`, `bootstrap`]}
       />
-      <Header title={ugEvent.title || ugEvent.slug}>
-        <p>
-          {ugEvent.date} {ugEvent.time}
-        </p>
-        <ul>
-          <li>
-            {ugEvent.presenter.name}{" "}
-            {ugEvent.presenter.twitter && (
-              <a
-                rel="nofollow"
-                target="_self"
-                href={`https://twitter.com/${ugEvent.presenter.twitter}`}
-              >
-                @{ugEvent.presenter.twitter}
-              </a>
-            )}{" "}
-            {ugEvent.presenter.website && (
-              <a rel="nofollow" target="_self" href={ugEvent.presenter.website}>
-                {ugEvent.presenter.website}
-              </a>
-            )}
-          </li>
-        </ul>
-      </Header>
+      <Jumbotron
+        className="text-white"
+        fluid
+        style={{
+          background: `linear-gradient(to bottom, rgba(35,35,35,0.8) 0%,rgba(35,35,35,0.8) 100%), url(${data.headingBackground.childImageSharp.fluid.src})`,
+        }}
+      >
+        <Container>
+          <Row>
+            <Col>
+              <h1>{ugEvent.title}</h1>
+              <p>
+                {ugEvent.date} {ugEvent.time}
+              </p>
+              <ul>
+                <li>
+                  {ugEvent.presenter.name}{" "}
+                  {ugEvent.presenter.twitter && (
+                    <a
+                      rel="nofollow"
+                      target="_self"
+                      href={`https://twitter.com/${ugEvent.presenter.twitter}`}
+                    >
+                      @{ugEvent.presenter.twitter}
+                    </a>
+                  )}{" "}
+                  {ugEvent.presenter.website && (
+                    <a
+                      rel="nofollow"
+                      target="_self"
+                      href={ugEvent.presenter.website}
+                    >
+                      {ugEvent.presenter.website}
+                    </a>
+                  )}
+                </li>
+              </ul>
+            </Col>
+          </Row>
+        </Container>
+      </Jumbotron>
       <Container className="text-left">
         <Row>
           <Col>
@@ -114,6 +130,15 @@ export const pageQuery = graphql`
         name
         website
         summary
+      }
+    }
+    headingBackground: file(
+      relativePath: { eq: "programming-1873854_1920.png" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
       }
     }
   }

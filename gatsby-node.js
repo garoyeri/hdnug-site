@@ -40,7 +40,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       date: Date! @dateformat
       time: String
       image: File @fileByRelativePath
-      excerpt: String!
+      excerpt: String
       content: String
       slug: String!
       website: String
@@ -179,7 +179,6 @@ exports.createPages = async ({
               }
             }
             id
-            excerpt
             frontmatter {
               date
               time
@@ -219,7 +218,7 @@ exports.createPages = async ({
         date: extractDay(n.node.frontmatter.date),
         time: n.node.frontmatter.time,
         title: n.node.frontmatter.title,
-        excerpt: n.node.frontmatter.excerpt || n.node.excerpt,
+        excerpt: n.node.frontmatter.excerpt,
         content: n.node.html,
         presenter: n.node.frontmatter.presenter || {},
         sponsor: n.node.frontmatter.sponsor || {},
@@ -306,12 +305,22 @@ function extractDay(meetingDate) {
   return moment.utc(meetingDate).format("YYYY-MM-DD")
 }
 
+function removeNullValues(item) {
+  for (var key in item) { 
+    if (item[key] === null || item[key] === undefined) {
+      delete item[key];
+    }
+  }
+}
+
 function merge(prev, next) {
   if (!prev) {
     return next
   } else if (!next) {
     return prev
   }
+
+  removeNullValues(next)
 
   return {
     ...prev,

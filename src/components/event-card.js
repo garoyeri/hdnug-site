@@ -7,7 +7,7 @@ const EventCard = ({ title, presenter, text, target, date, time }) => {
   return (
     <Card>
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title><Link to={target}>{title}</Link></Card.Title>
         <div>
           <p>
             <i>Presented by: {presenter?.name}</i>
