@@ -27,7 +27,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       github: String
       linkedin: String
       image: File @fileByRelativePath
-      bio: String
+      summary: String
       slug: String
       hidden: Boolean
     }
@@ -116,7 +116,7 @@ exports.createPages = async ({
         name: `${rawEvent.SpeakerFirstName || ""} ${
           rawEvent.SpeakerLastName || ""
         }`.trim(),
-        bio: rawEvent.AboutSpeaker,
+        summary: rawEvent.AboutSpeaker,
       },
       sponsor: {
         name: rawEvent.SponsorName,
@@ -160,7 +160,7 @@ exports.createPages = async ({
       time: n.node.local_time,
       title: n.node.name,
       website: n.node.link,
-      content: n.node.description,
+      excerpt: n.node.description,
       image: n.node.featured_photo && n.node.featured_photo.highres_link,
       presenter: {},
       sponsor: {},
@@ -228,10 +228,10 @@ exports.createPages = async ({
     })
 
   let ugEvents = {}
-  xmlEvents.map(x => {
-    ugEvents[x.date] = merge(null, x)
-  })
   meetupEvents.map(x => {
+    ugEvents[x.date] = merge(ugEvents[x.date], x)
+  })
+  xmlEvents.map(x => {
     ugEvents[x.date] = merge(ugEvents[x.date], x)
   })
   markdownEvents.map(x => {

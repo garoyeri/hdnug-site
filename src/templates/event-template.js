@@ -43,9 +43,34 @@ const EventTemplate = ({ data, pageContext }) => {
       <Container className="text-left">
         <Row>
           <Col>
+            {ugEvent.excerpt && (
+              <>
+                <p dangerouslySetInnerHTML={{ __html: ugEvent.excerpt }} />
+              </>
+            )}
+            {ugEvent.presenter?.summary && (
+              <>
+                <h2>About {ugEvent.presenter.name}</h2>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: ugEvent.presenter.summary,
+                  }}
+                ></p>
+              </>
+            )}
+            {ugEvent.sponsor?.summary && (
+              <>
+                <h2>About the sponsor: {ugEvent.sponsor.name}</h2>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: ugEvent.sponsor.summary,
+                  }}
+                />
+              </>
+            )}
             <div
               className="text-left"
-              dangerouslySetInnerHTML={{ __html: ugEvent.content || ugEvent.excerpt }}
+              dangerouslySetInnerHTML={{ __html: ugEvent.content }}
             />
           </Col>
         </Row>
@@ -83,10 +108,12 @@ export const pageQuery = graphql`
         name
         twitter
         website
+        summary
       }
       sponsor {
         name
         website
+        summary
       }
     }
   }

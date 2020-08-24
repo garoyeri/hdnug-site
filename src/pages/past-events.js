@@ -39,7 +39,7 @@ const PastEventsPage = ({ data }) => {
                 {data.events.edges.map(({ node }) => {
                   // console.log("Node Found", node)
                   return (
-                    <tr>
+                    <tr key={node.slug}>
                       <td>
                         <nobr>{node.date}</nobr>
                       </td>
