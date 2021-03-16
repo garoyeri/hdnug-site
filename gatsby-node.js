@@ -20,7 +20,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     UgPerson: a presenter or officer referenced in a page
     """
     type UgPerson {
-      name: String!
+      name: String
       email: String
       website: String
       twitter: String
