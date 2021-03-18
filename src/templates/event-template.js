@@ -59,7 +59,7 @@ const EventTemplate = ({ data, pageContext }) => {
       <Container className="text-left">
         <Row>
           <Col>
-            {ugEvent.excerpt && (
+            {ugEvent.excerpt && !ugEvent.content && (
               <>
                 <p dangerouslySetInnerHTML={{ __html: ugEvent.excerpt }} />
               </>

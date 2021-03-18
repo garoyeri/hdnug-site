@@ -47,6 +47,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       presenter: UgPerson
       sponsor: UgSponsor
       hidden: Boolean
+      no_content: Boolean
     }
 
     """
@@ -161,6 +162,7 @@ exports.createPages = async ({
       title: n.node.name,
       website: n.node.link,
       excerpt: stripHtml(n.node.description),
+      content: n.node.description,
       image: n.node.featured_photo && n.node.featured_photo.highres_link,
       presenter: {},
       sponsor: {},
@@ -195,6 +197,7 @@ exports.createPages = async ({
                 name
                 website
               }
+              no_content
             }
             html
           }
@@ -325,6 +328,7 @@ function merge(prev, next) {
   return {
     ...prev,
     ...next,
+    content: next.content || prev.content,
     presenter: {
       ...(prev.presenter || {}),
       ...(next.presenter || {}),
@@ -357,6 +361,7 @@ function generateEvent(node) {
   return {
     ...node.frontmatter,
     hidden: node.hidden || false,
+    no_content: node.frontmatter.no_content || false,
   }
 }
 
