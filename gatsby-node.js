@@ -47,7 +47,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       presenter: UgPerson
       sponsor: UgSponsor
       hidden: Boolean
-      no_content: Boolean
     }
 
     """
@@ -197,7 +196,6 @@ exports.createPages = async ({
                 name
                 website
               }
-              no_content
             }
             html
           }
@@ -361,7 +359,6 @@ function generateEvent(node) {
   return {
     ...node.frontmatter,
     hidden: node.hidden || false,
-    no_content: node.frontmatter.no_content || false,
   }
 }
 

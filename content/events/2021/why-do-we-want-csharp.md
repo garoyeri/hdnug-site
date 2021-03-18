@@ -7,5 +7,4 @@ excerpt: |
 presenter:
   name: Mark Reynolds
   website: https://profreynolds.com/
-no_content: true
 ---
