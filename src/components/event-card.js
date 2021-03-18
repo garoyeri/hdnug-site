@@ -15,7 +15,7 @@ const EventCard = ({ title, presenter, text, target, date, time }) => {
           <p>
             {date} {time}
           </p>
-          <p>{text}</p>
+          <p dangerouslySetInnerHTML={{ __html: text }} />
           <p>
             <Link className="btn btn-primary" to={target}>
               Learn More

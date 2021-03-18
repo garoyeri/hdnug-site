@@ -160,7 +160,7 @@ exports.createPages = async ({
       time: n.node.local_time,
       title: n.node.name,
       website: n.node.link,
-      excerpt: stripHtml(n.node.description),
+      excerpt: n.node.description,
       content: n.node.description,
       image: n.node.featured_photo && n.node.featured_photo.highres_link,
       presenter: {},
