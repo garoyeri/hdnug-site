@@ -10,15 +10,17 @@ const EventCard = ({ title, presenter, text, target, date, time }) => {
         <Card.Title><Link to={target}>{title}</Link></Card.Title>
         <div>
           <p>
-            <i>Presented by: {presenter?.name}</i>
+            {presenter?.name && (
+              <i>Presented by: {presenter?.name}</i>
+            )}            
           </p>
           <p>
             {date} {time}
           </p>
-          <p dangerouslySetInnerHTML={{ __html: text }} />
+          <p>{text}</p>
           <p>
             <Link className="btn btn-primary" to={target}>
-              Learn More
+              Details
             </Link>
           </p>
         </div>

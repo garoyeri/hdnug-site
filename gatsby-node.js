@@ -158,9 +158,9 @@ exports.createPages = async ({
       meetup_id: n.node.id,
       date: n.node.local_date,
       time: n.node.local_time,
-      title: n.node.name,
+      title: fixupTitle(n.node.name),
       website: n.node.link,
-      excerpt: n.node.description,
+      //excerpt: stripHtml(n.node.description),
       content: n.node.description,
       image: n.node.featured_photo && n.node.featured_photo.highres_link,
       presenter: {},
@@ -364,4 +364,9 @@ function generateEvent(node) {
 
 function stripHtml(html) {
   return html.replace(/(<([^>]+)>)/gi, "")
+}
+
+function fixupTitle(title) {
+  // remove prefixed "HDNUG January:"
+  return title.replace(/^HDNUG.*: /, "")
 }
