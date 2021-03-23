@@ -7,6 +7,7 @@ excerpt: |
 presenter:
   name: Alex Yakunin
   website: https://www.linkedin.com/in/alexyakunin/
+youtube: TcUq1kOzpY8
 ---
 
 ## Abstract
@@ -16,7 +17,3 @@ Alex Yakunin will talk about the fundamental connection between all these proble
 ## About Alex Yakunin
 
 Alex is the creator of Fusion (<https://github.com/servicetitan/Stl.Fusion>) - an open-source library for .NET 5.0 and Blazor that implements this abstraction. He is also the CTO of ServiceTitan, Inc. (<https://www.servicetitan.com/>) - a company developing #1 Field Service Platform, which is also ranked #11 in Forbes Cloud. Previously Alex worked as Performance Engineer at Quora, Inc., where he co-authored quora/asynq (<https://github.com/quora/asynq>).
-
-## Presentation Recording
-
-`video: [December 2020 GHADNUG: Efficient caching, real-time updates, and low latency](https://youtu.be/TcUq1kOzpY8)`

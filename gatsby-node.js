@@ -47,6 +47,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       presenter: UgPerson
       sponsor: UgSponsor
       hidden: Boolean
+      youtube: String
     }
 
     """
@@ -123,6 +124,7 @@ exports.createPages = async ({
         website: rawEvent.SponsorUrl,
         summary: rawEvent.SponsorMessage,
       },
+      youtube: rawEvent.YouTube,
     }
   })
 
@@ -160,7 +162,6 @@ exports.createPages = async ({
       time: n.node.local_time,
       title: fixupTitle(n.node.name),
       website: n.node.link,
-      //excerpt: stripHtml(n.node.description),
       content: n.node.description,
       image: n.node.featured_photo && n.node.featured_photo.highres_link,
       presenter: {},
@@ -196,6 +197,7 @@ exports.createPages = async ({
                 name
                 website
               }
+              youtube
             }
             html
           }
@@ -224,6 +226,7 @@ exports.createPages = async ({
         presenter: n.node.frontmatter.presenter || {},
         sponsor: n.node.frontmatter.sponsor || {},
         hidden: n.node.hidden || false,
+        youtube: n.node.frontmatter.youtube,
       }
     })
 

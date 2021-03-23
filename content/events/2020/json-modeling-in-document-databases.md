@@ -7,6 +7,7 @@ excerpt: |
 presenter:
   name: Matthew Groves
   website: https://crosscuttingconcerns.com/
+youtube: pFGnkdzRaxg
 ---
 
 ## Abstract
@@ -16,7 +17,3 @@ If you’re thinking about using a document database, it can be intimidating to 
 ## About Matthew Groves
 
 Matthew D. Groves is a guy who loves to code. It doesn't matter if it's C#, jQuery, or PHP: he'll submit pull requests for anything. He has been coding professionally ever since he wrote a QuickBASIC point-of-sale app for his parent's pizza shop back in the 90s. He currently works as a Developer Advocate for Couchbase. His free time is spent with his family, watching the Reds, and getting involved in the developer community. He is the author of AOP in .NET (published by Manning), a Pluralsight author, and a Microsoft MVP.
-
-## Presentation Recording
-
-`video: [October 2020 GHADNUG: JSON Data Modeling in Document Databases](https://youtu.be/pFGnkdzRaxg)`

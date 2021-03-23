@@ -88,6 +88,20 @@ const EventTemplate = ({ data, pageContext }) => {
               className="text-left"
               dangerouslySetInnerHTML={{ __html: ugEvent.content }}
             />
+            {ugEvent.youtube && (
+              <>
+                <h2>Presentation Recording</h2>
+                <iframe
+                  width="560"
+                  height="315"
+                  src={"https://www.youtube.com/embed/" + ugEvent.youtube}
+                  title={ugEvent.title}
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </>
+            )}
           </Col>
         </Row>
         <Row className="mt-5 mb-5">
@@ -131,6 +145,7 @@ export const pageQuery = graphql`
         website
         summary
       }
+      youtube
     }
     headingBackground: file(
       relativePath: { eq: "programming-1873854_1920.png" }

@@ -12,6 +12,7 @@ presenter:
 sponsor:
   name: Sponsor Name
   website: sponsor.com
+youtube: https://youtu.be/wrQ8xB83nbs
 ---
 
 ## Abstract

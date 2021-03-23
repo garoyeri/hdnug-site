@@ -7,11 +7,14 @@ excerpt: |
 presenter:
   name: Mark Reynolds
   website: https://profreynolds.com/
+youtube: NSnQsL0R8lo
 ---
 
 ## Abstract
 
 An incremental improvement or a step change? Just when you though it couldn't get any better, C# v9 arrives bringing new features to Visual Studio. Each of these will be demonstrated in a practical example.
+
+Download Presentation: [Download](why-do-we-want-csharp-9.pptx)
 
 ## About Mark Reynolds
 
@@ -19,9 +22,3 @@ Mark has been developing operations-centric solutions, Machine Learning, Predict
 
 * Blog: <https://profreynolds.com/>
 * LinkedIn: <https://LinkedIn.com/in/ProfReynolds>
-
-## Presentation Recording
-
-Download Presentation: [Download](why-do-we-want-csharp-9.pptx)
-
-`video: [February 2021 GHADNUG: Why do we want C# 9?](https://youtu.be/NSnQsL0R8lo)`

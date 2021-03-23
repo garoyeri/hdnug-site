@@ -7,6 +7,7 @@ excerpt: |
 presenter:
   name: Germán Küber
   website: https://www.germankuber.com.ar/
+youtube: _1S2V3x1_YY
 ---
 
 ## Abstract
@@ -29,7 +30,3 @@ I will wait for you to talk about the fantastic world of OOP.
 ## Sponsored by Whitaker IT
 
 [Whitaker IT](https://www.whitakercompanies.com/whitaker-it/) specializes in IT talent resources of mid to senior level IT professionals nationwide for even the most challenging requirements, including project development and support. We have been growing and expanding our networks of IT professionals domestically and internationally for over 30 years. Our team has the experience and knowledge to properly identify, evaluate and screen IT professionals to solve business problems and add value to the company.
-
-## Presentation Recording
-
-`video: [November 2020 GHADNUG: How Object Oriented is our Code?](https://youtu.be/_1S2V3x1_YY)`

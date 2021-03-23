@@ -662,6 +662,7 @@ Sound impossible? It's not. Sound difficult? With SignalR, it's not. In this pre
     <SponsorName>.NET Report Builder</SponsorName>
     <SponsorUrl>The best open-source Ad-Hoc DIY Report Builder solution</SponsorUrl>
     <Title>Two-Way Web Apps with SignalR</Title>
+    <YouTube>7zTyS_CkeTQ</YouTube>
   </MeetingAnnouncement>
 
   <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
@@ -681,6 +682,7 @@ Houston, TX 77042</MeetingLocation>
     <SponsorName>IPT Global</SponsorName>
     <SponsorUrl>Leading the digital oilfield revolution</SponsorUrl>
     <Title>Why Do We Want C#7?</Title>
+    <YouTube>nAX_QCUvQeQ</YouTube>
   </MeetingAnnouncement>
 
   <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
@@ -700,6 +702,7 @@ Houston, TX 77042</MeetingLocation>
     <SponsorName>TekSystems</SponsorName>
     <SponsorUrl>Our people make IT possible.</SponsorUrl>
     <Title>Creating Built-In Extensibility </Title>
+    <YouTube>XwPnxcBpX_s</YouTube>
   </MeetingAnnouncement>
 
   <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
@@ -723,6 +726,7 @@ Check out more details at https://www.eventbrite.com/e/geek-on-a-harley-the-road
     <SponsorName>TEALS</SponsorName>
     <SponsorUrl>Teaching Education and Literacy in Schools</SponsorUrl>
     <Title>Geek on a Harley: The Chaos Tour Houston</Title>
+    <YouTube>vyjxIvgcszc</YouTube>
   </MeetingAnnouncement>
 
   <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
@@ -746,6 +750,7 @@ Digital transformation is a continuous journey. Successful digital enterprises e
     <SponsorName>WSO2</SponsorName>
     <SponsorUrl i:nil="true"/>
     <Title>Pain Free: Avoiding Shared Databases and Managing Test Data In The Cloud</Title>
+    <YouTube>MnYdAUTLRfY</YouTube>
   </MeetingAnnouncement>
 
   <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
@@ -769,6 +774,7 @@ Houston, TX 77042</MeetingLocation>
     <SponsorName>TEKsystems</SponsorName>
     <SponsorUrl i:nil="true"/>
     <Title>Architect – How to be more than a title and a Visio?</Title>
+    <YouTube>kaaghTQ5dpg</YouTube>
   </MeetingAnnouncement>
 
   <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
@@ -800,6 +806,7 @@ Call or email us today for a free consultation concerning your .NET application 
     <SponsorName>Yunifire</SponsorName>
     <SponsorUrl>Information Technology Brokers</SponsorUrl>
     <Title>dotnet Report Builder</Title>
+    <YouTube>EYwXBefvOS4</YouTube>
   </MeetingAnnouncement>
 
   <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
@@ -825,6 +832,7 @@ Genuent is a national expert in delivering Talent and resource solutions, produc
     <SponsorName>Genuent</SponsorName>
     <SponsorUrl>Innovative Talent Solutions</SponsorUrl>
     <Title>Building Cross Device Experiences with Project Rome</Title>
+    <YouTube>jTpJWEsJcx4</YouTube>
   </MeetingAnnouncement>
 
   <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
@@ -850,6 +858,7 @@ Job opportunities range in contract, contract-to-hire and direct-hire assignment
     <SponsorName>Whitaker IT</SponsorName>
     <SponsorUrl>National IT Staffing</SponsorUrl>
     <Title>The Independent Developer - Lessons Learned from 5 Years of Self Employment</Title>
+    <YouTube>MY-W5jheq2k</YouTube>
   </MeetingAnnouncement>
 
   <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
@@ -871,6 +880,7 @@ This session addresses all of those questions, as we talk through the importance
     <SponsorName i:nil="true"/>
     <SponsorUrl i:nil="true"/>
     <Title>Testing in Agile: from Afterthought to an Integral Part</Title>
+    <YouTube>vdmVAFxsy3U</YouTube>
   </MeetingAnnouncement>
 
   <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
@@ -913,6 +923,7 @@ Houston, TX 77042</MeetingLocation>
     <SponsorName/>
     <SponsorUrl i:nil="true"/>
     <Title>Introduction to Azure Machine Learning</Title>
+    <YouTube>hoIesK91RxM</YouTube>
   </MeetingAnnouncement>
 
   <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
@@ -969,6 +980,7 @@ Our partnerships are firmly grounded in the belief that collaboration is vital t
     <SponsorName>Neudesic</SponsorName>
     <SponsorUrl i:nil="true"/>
     <Title>Do you have technical debt?</Title>
+    <YouTube>QfkotyrXTok</YouTube>
   </MeetingAnnouncement>
 
   <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
@@ -990,6 +1002,7 @@ In this talk you’ll learn the fundamentals of Akka.NET and discover how you ca
     <SponsorName>TEALS</SponsorName>
     <SponsorUrl i:nil="true"/>
     <Title>Akka.NET and the Future of Distributed Application Development in .NET</Title>
+    <YouTube>CV6UnqqKUTU</YouTube>
   </MeetingAnnouncement>
 
   <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"
@@ -1009,6 +1022,7 @@ Houston, TX 77042</MeetingLocation>
     <SponsorName>Headspring</SponsorName>
     <SponsorUrl i:nil="true"/>
     <Title>The Twelve Factor App - Get Your Software Cloud Ready</Title>
+    <YouTube>j5dRqZC0e7I</YouTube>
   </MeetingAnnouncement>
 
   <MeetingAnnouncement xmlns="http://schemas.datacontract.org/2004/07/HdnugAnnouncementFormatter"

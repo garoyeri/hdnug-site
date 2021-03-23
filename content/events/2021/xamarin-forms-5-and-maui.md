@@ -7,6 +7,7 @@ excerpt: |
 presenter:
   name: Hussain Abbasi
   website: https://hussainabbasi.com/
+youtube: g4JhIMkj0jY
 ---
 
 ## Abstract
@@ -16,7 +17,3 @@ Xamarin.Forms 5 has landed. It has a slew of new controls and enhancements. But,
 ## About Hussain Abbasi
 
 Software Engineer, Content Creator, Speaker, Tech enthusiast, Head of Technology @ ChaiOne with over 10 years of experience developing cloud, mobile, web and desktop applications. Guiding businesses through successful digital transformation journey. As a leader, I mentor, manage, and lead engineering teams. I enjoy working with businesses to understand their needs, design a solution, and produce results.
-
-## Presentation Recording
-
-`video: [January 2021 GHADNUG: Xamarin.Forms 5 and MAUI](https://youtu.be/g4JhIMkj0jY)`
