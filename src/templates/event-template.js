@@ -59,6 +59,11 @@ const EventTemplate = ({ data, pageContext }) => {
       <Container className="text-left">
         <Row>
           <Col>
+            {ugEvent.website && (
+              <>
+                <h2>Meetup: <a href={ugEvent.website}>Register for this Event</a></h2>
+              </>
+            )}
             {ugEvent.excerpt && !ugEvent.content && (
               <>
                 <p dangerouslySetInnerHTML={{ __html: ugEvent.excerpt }} />
@@ -134,6 +139,7 @@ export const pageQuery = graphql`
       title
       excerpt
       content
+      website
       presenter {
         name
         twitter
