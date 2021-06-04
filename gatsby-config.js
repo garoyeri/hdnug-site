@@ -52,8 +52,9 @@ module.exports = {
         path: `${__dirname}/content/sponsors`,
       },
     },
-    `gatsby-transformer-sharp`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-transformer-xml`,
     {
       resolve: `gatsby-transformer-remark`,

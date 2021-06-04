@@ -19,7 +19,7 @@ const EventTemplate = ({ data, pageContext }) => {
         className="text-white"
         fluid
         style={{
-          background: `linear-gradient(to bottom, rgba(35,35,35,0.8) 0%,rgba(35,35,35,0.8) 100%), url(${data.headingBackground.childImageSharp.fluid.src})`,
+          background: `linear-gradient(to bottom, rgba(35,35,35,0.8) 0%,rgba(35,35,35,0.8) 100%), url(${data.headingBackground.childImageSharp.gatsbyImageData.src})`,
         }}
       >
         <Container>
@@ -127,42 +127,37 @@ const EventTemplate = ({ data, pageContext }) => {
         </Row>
       </Container>
     </Layout>
-  )
+  );
 }
 
-export const pageQuery = graphql`
-  query($slug: String!) {
-    ugEvent(slug: { eq: $slug }) {
-      slug
-      date(formatString: "MMMM DD, YYYY")
-      time
-      title
-      excerpt
-      content
+export const pageQuery = graphql`query ($slug: String!) {
+  ugEvent(slug: {eq: $slug}) {
+    slug
+    date(formatString: "MMMM DD, YYYY")
+    time
+    title
+    excerpt
+    content
+    website
+    presenter {
+      name
+      twitter
       website
-      presenter {
-        name
-        twitter
-        website
-        summary
-      }
-      sponsor {
-        name
-        website
-        summary
-      }
-      youtube
+      summary
     }
-    headingBackground: file(
-      relativePath: { eq: "programming-1873854_1920.png" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+    sponsor {
+      name
+      website
+      summary
+    }
+    youtube
+  }
+  headingBackground: file(relativePath: {eq: "programming-1873854_1920.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
+}
 `
 
 export default EventTemplate

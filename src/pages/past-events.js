@@ -14,7 +14,7 @@ const PastEventsPage = ({ data }) => {
         className="text-white"
         fluid
         style={{
-          background: `linear-gradient(to bottom, rgba(35,35,35,0.8) 0%,rgba(35,35,35,0.8) 100%), url(${data.headingBackground.childImageSharp.fluid.src})`,
+          background: `linear-gradient(to bottom, rgba(35,35,35,0.8) 0%,rgba(35,35,35,0.8) 100%), url(${data.headingBackground.childImageSharp.gatsbyImageData.src})`,
         }}
       >
         <Container>
@@ -60,42 +60,35 @@ const PastEventsPage = ({ data }) => {
         </Row>
       </Container>
     </Layout>
-  )
+  );
 }
 
-export const pageQuery = graphql`
-  query {
-    events: allUgEvent(
-      filter: {
-        hidden: { ne: true }
-      }
-      sort: { fields: date, order: DESC }
-    ) {
-      edges {
-        node {
-          slug
-          date(formatString: "ddd, MMM D, YYYY")
-          title
-          time
-          excerpt
-          presenter {
-            name
-            twitter
-            website
-          }
-        }
-      }
-    }
-    headingBackground: file(
-      relativePath: { eq: "programming-1873854_1920.png" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
+export const pageQuery = graphql`{
+  events: allUgEvent(
+    filter: {hidden: {ne: true}}
+    sort: {fields: date, order: DESC}
+  ) {
+    edges {
+      node {
+        slug
+        date(formatString: "ddd, MMM D, YYYY")
+        title
+        time
+        excerpt
+        presenter {
+          name
+          twitter
+          website
         }
       }
     }
   }
+  headingBackground: file(relativePath: {eq: "programming-1873854_1920.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+}
 `
 
 export default PastEventsPage

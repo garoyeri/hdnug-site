@@ -1,7 +1,7 @@
 import React from "react"
 import { Row, Col, Container, Jumbotron, CardColumns } from "react-bootstrap"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
         className="text-white"
         fluid
         style={{
-          background: `linear-gradient(to bottom, rgba(35,35,35,0.8) 0%,rgba(35,35,35,0.8) 100%), url(${data.headingBackground.childImageSharp.fluid.src})`,
+          background: `linear-gradient(to bottom, rgba(35,35,35,0.8) 0%,rgba(35,35,35,0.8) 100%), url(${data.headingBackground.childImageSharp.gatsbyImageData.src})`,
         }}
       >
         <Container>
@@ -31,7 +31,7 @@ const IndexPage = ({ data }) => (
               </p>
             </Col>
             <Col md={4} lg={2} className="d-none d-md-block">
-              <Img fluid={data.logo.childImageSharp.fluid} />
+              <GatsbyImage image={data.logo.childImageSharp.gatsbyImageData} />
             </Col>
           </Row>
         </Container>
@@ -63,46 +63,39 @@ const IndexPage = ({ data }) => (
   </Layout>
 )
 
-export const pageQuery = graphql`
-  query {
-    logo: file(relativePath: { eq: "hdnug-logo-white-text.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+export const pageQuery = graphql`{
+  logo: file(relativePath: {eq: "hdnug-logo-white-text.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 600, layout: CONSTRAINED)
     }
-    headingBackground: file(relativePath: { eq: "startup-593341_1920.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 1920) {
-          ...GatsbyImageSharpFluid
-        }
-      }
+  }
+  headingBackground: file(relativePath: {eq: "startup-593341_1920.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
-    events: allUgEvent(
-      filter: {
-        hidden: { ne: true }
-      }
-      sort: { fields: date, order: DESC }
-      limit: 6
-    ) {
-      edges {
-        node {
-          id
-          slug
-          date(formatString: "ddd, MMM D")
-          title
-          excerpt
-          time
-          presenter {
-            name
-            twitter
-            website
-          }
+  }
+  events: allUgEvent(
+    filter: {hidden: {ne: true}}
+    sort: {fields: date, order: DESC}
+    limit: 6
+  ) {
+    edges {
+      node {
+        id
+        slug
+        date(formatString: "ddd, MMM D")
+        title
+        excerpt
+        time
+        presenter {
+          name
+          twitter
+          website
         }
       }
     }
   }
+}
 `
 
 export default IndexPage
