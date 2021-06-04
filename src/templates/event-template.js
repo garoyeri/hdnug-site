@@ -1,12 +1,13 @@
 import React from "react"
 import { Row, Col, Container, Jumbotron } from "react-bootstrap"
 import { graphql, Link } from "gatsby"
+import { getSrc } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const EventTemplate = ({ data, pageContext }) => {
-  const { ugEvent } = data
+  const { ugEvent, headingBackground } = data
   const { next, previous } = pageContext
 
   return (
@@ -19,7 +20,7 @@ const EventTemplate = ({ data, pageContext }) => {
         className="text-white"
         fluid
         style={{
-          background: `linear-gradient(to bottom, rgba(35,35,35,0.8) 0%,rgba(35,35,35,0.8) 100%), url(${data.headingBackground.childImageSharp.gatsbyImageData.src})`,
+          background: `linear-gradient(to bottom, rgba(35,35,35,0.8) 0%,rgba(35,35,35,0.8) 100%), url(${getSrc(headingBackground)})`,
         }}
       >
         <Container>
